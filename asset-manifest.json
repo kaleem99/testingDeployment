@@ -1,16 +1,28 @@
 {
   "files": {
-    "main.css": "/testingDeployment/static/css/main.073c9b0a.css",
-    "main.js": "/testingDeployment/static/js/main.0ca324ae.js",
-    "static/js/787.28cb0dcd.chunk.js": "/testingDeployment/static/js/787.28cb0dcd.chunk.js",
-    "static/media/logo.svg": "/testingDeployment/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/testingDeployment/static/css/main.0a969a58.css",
+    "main.js": "/testingDeployment/static/js/main.96945dbc.js",
+    "static/js/236.7396c053.chunk.js": "/testingDeployment/static/js/236.7396c053.chunk.js",
+    "static/js/703.e8342ea3.chunk.js": "/testingDeployment/static/js/703.e8342ea3.chunk.js",
+    "static/js/598.a2e59b02.chunk.js": "/testingDeployment/static/js/598.a2e59b02.chunk.js",
+    "static/js/787.d2a94437.chunk.js": "/testingDeployment/static/js/787.d2a94437.chunk.js",
+    "static/media/negotiation-each-feels-same-towards-other-poor-sucker-33605740.jpeg": "/testingDeployment/static/media/negotiation-each-feels-same-towards-other-poor-sucker-33605740.1e14506c00f90a87600d.jpeg",
+    "static/media/150-1500375_transparent-interview-png-job-interview-images-cartoon-png.png": "/testingDeployment/static/media/150-1500375_transparent-interview-png-job-interview-images-cartoon-png.17c5c17525cb23f3d618.png",
+    "static/media/3214746.png": "/testingDeployment/static/media/3214746.7e1e53e4010f34ac87c7.png",
+    "static/media/employer.png": "/testingDeployment/static/media/employer.25b80070099fd44f0765.png",
+    "static/media/istockphoto-1191661875-612x612.jpeg": "/testingDeployment/static/media/istockphoto-1191661875-612x612.188d93a3155923f4efe1.jpeg",
+    "static/media/Hamburger_icon.svg.png": "/testingDeployment/static/media/Hamburger_icon.svg.a633845bca57a0d1a648.png",
+    "static/media/cancel-close-cross-navigation-menu-512.webp": "/testingDeployment/static/media/cancel-close-cross-navigation-menu-512.9d2853ce2a485ebc726c.webp",
     "index.html": "/testingDeployment/index.html",
-    "main.073c9b0a.css.map": "/testingDeployment/static/css/main.073c9b0a.css.map",
-    "main.0ca324ae.js.map": "/testingDeployment/static/js/main.0ca324ae.js.map",
-    "787.28cb0dcd.chunk.js.map": "/testingDeployment/static/js/787.28cb0dcd.chunk.js.map"
+    "main.0a969a58.css.map": "/testingDeployment/static/css/main.0a969a58.css.map",
+    "main.96945dbc.js.map": "/testingDeployment/static/js/main.96945dbc.js.map",
+    "236.7396c053.chunk.js.map": "/testingDeployment/static/js/236.7396c053.chunk.js.map",
+    "703.e8342ea3.chunk.js.map": "/testingDeployment/static/js/703.e8342ea3.chunk.js.map",
+    "598.a2e59b02.chunk.js.map": "/testingDeployment/static/js/598.a2e59b02.chunk.js.map",
+    "787.d2a94437.chunk.js.map": "/testingDeployment/static/js/787.d2a94437.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.0ca324ae.js"
+    "static/css/main.0a969a58.css",
+    "static/js/main.96945dbc.js"
   ]
 }
