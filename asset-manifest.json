@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/testingDeployment/static/css/main.0a969a58.css",
-    "main.js": "/testingDeployment/static/js/main.96945dbc.js",
+    "main.css": "/testingDeployment/static/css/main.b6d6b58a.css",
+    "main.js": "/testingDeployment/static/js/main.982803d3.js",
     "static/js/236.7396c053.chunk.js": "/testingDeployment/static/js/236.7396c053.chunk.js",
     "static/js/703.e8342ea3.chunk.js": "/testingDeployment/static/js/703.e8342ea3.chunk.js",
     "static/js/598.a2e59b02.chunk.js": "/testingDeployment/static/js/598.a2e59b02.chunk.js",
@@ -14,15 +14,15 @@
     "static/media/Hamburger_icon.svg.png": "/testingDeployment/static/media/Hamburger_icon.svg.a633845bca57a0d1a648.png",
     "static/media/cancel-close-cross-navigation-menu-512.webp": "/testingDeployment/static/media/cancel-close-cross-navigation-menu-512.9d2853ce2a485ebc726c.webp",
     "index.html": "/testingDeployment/index.html",
-    "main.0a969a58.css.map": "/testingDeployment/static/css/main.0a969a58.css.map",
-    "main.96945dbc.js.map": "/testingDeployment/static/js/main.96945dbc.js.map",
+    "main.b6d6b58a.css.map": "/testingDeployment/static/css/main.b6d6b58a.css.map",
+    "main.982803d3.js.map": "/testingDeployment/static/js/main.982803d3.js.map",
     "236.7396c053.chunk.js.map": "/testingDeployment/static/js/236.7396c053.chunk.js.map",
     "703.e8342ea3.chunk.js.map": "/testingDeployment/static/js/703.e8342ea3.chunk.js.map",
     "598.a2e59b02.chunk.js.map": "/testingDeployment/static/js/598.a2e59b02.chunk.js.map",
     "787.d2a94437.chunk.js.map": "/testingDeployment/static/js/787.d2a94437.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a969a58.css",
-    "static/js/main.96945dbc.js"
+    "static/css/main.b6d6b58a.css",
+    "static/js/main.982803d3.js"
   ]
 }
