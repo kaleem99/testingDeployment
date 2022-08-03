@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Simulation-initial-project/static/css/main.d7f56881.css",
+    "main.css": "/Simulation-initial-project/static/css/main.84367d08.css",
     "main.js": "/Simulation-initial-project/static/js/main.e6352c68.js",
     "static/js/236.7396c053.chunk.js": "/Simulation-initial-project/static/js/236.7396c053.chunk.js",
     "static/js/703.e8342ea3.chunk.js": "/Simulation-initial-project/static/js/703.e8342ea3.chunk.js",
@@ -16,7 +16,7 @@
     "static/media/Hamburger_icon.svg.png": "/Simulation-initial-project/static/media/Hamburger_icon.svg.a633845bca57a0d1a648.png",
     "static/media/cancel-close-cross-navigation-menu-512.webp": "/Simulation-initial-project/static/media/cancel-close-cross-navigation-menu-512.9d2853ce2a485ebc726c.webp",
     "index.html": "/Simulation-initial-project/index.html",
-    "main.d7f56881.css.map": "/Simulation-initial-project/static/css/main.d7f56881.css.map",
+    "main.84367d08.css.map": "/Simulation-initial-project/static/css/main.84367d08.css.map",
     "main.e6352c68.js.map": "/Simulation-initial-project/static/js/main.e6352c68.js.map",
     "236.7396c053.chunk.js.map": "/Simulation-initial-project/static/js/236.7396c053.chunk.js.map",
     "703.e8342ea3.chunk.js.map": "/Simulation-initial-project/static/js/703.e8342ea3.chunk.js.map",
@@ -24,7 +24,7 @@
     "787.d2a94437.chunk.js.map": "/Simulation-initial-project/static/js/787.d2a94437.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7f56881.css",
+    "static/css/main.84367d08.css",
     "static/js/main.e6352c68.js"
   ]
 }
