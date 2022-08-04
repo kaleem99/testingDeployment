@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/testingDeployment/static/css/main.84367d08.css",
-    "main.js": "/testingDeployment/static/js/main.81641180.js",
+    "main.css": "/testingDeployment/static/css/main.9bc2a58c.css",
+    "main.js": "/testingDeployment/static/js/main.227b52f3.js",
     "static/js/236.7396c053.chunk.js": "/testingDeployment/static/js/236.7396c053.chunk.js",
     "static/js/703.e8342ea3.chunk.js": "/testingDeployment/static/js/703.e8342ea3.chunk.js",
     "static/js/598.a2e59b02.chunk.js": "/testingDeployment/static/js/598.a2e59b02.chunk.js",
@@ -14,17 +14,16 @@
     "static/media/istockphoto-1191661875-612x612.jpeg": "/testingDeployment/static/media/istockphoto-1191661875-612x612.188d93a3155923f4efe1.jpeg",
     "static/media/candidate.jpeg": "/testingDeployment/static/media/candidate.247e10b8d7c0c8fe4fc1.jpeg",
     "static/media/Hamburger_icon.svg.png": "/testingDeployment/static/media/Hamburger_icon.svg.a633845bca57a0d1a648.png",
-    "static/media/cancel-close-cross-navigation-menu-512.webp": "/testingDeployment/static/media/cancel-close-cross-navigation-menu-512.9d2853ce2a485ebc726c.webp",
     "index.html": "/testingDeployment/index.html",
-    "main.84367d08.css.map": "/testingDeployment/static/css/main.84367d08.css.map",
-    "main.81641180.js.map": "/testingDeployment/static/js/main.81641180.js.map",
+    "main.9bc2a58c.css.map": "/testingDeployment/static/css/main.9bc2a58c.css.map",
+    "main.227b52f3.js.map": "/testingDeployment/static/js/main.227b52f3.js.map",
     "236.7396c053.chunk.js.map": "/testingDeployment/static/js/236.7396c053.chunk.js.map",
     "703.e8342ea3.chunk.js.map": "/testingDeployment/static/js/703.e8342ea3.chunk.js.map",
     "598.a2e59b02.chunk.js.map": "/testingDeployment/static/js/598.a2e59b02.chunk.js.map",
     "787.d2a94437.chunk.js.map": "/testingDeployment/static/js/787.d2a94437.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.84367d08.css",
-    "static/js/main.81641180.js"
+    "static/css/main.9bc2a58c.css",
+    "static/js/main.227b52f3.js"
   ]
 }
