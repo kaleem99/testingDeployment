@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/testingDeployment/static/css/main.9bc2a58c.css",
-    "main.js": "/testingDeployment/static/js/main.227b52f3.js",
+    "main.css": "/testingDeployment/static/css/main.b53a678f.css",
+    "main.js": "/testingDeployment/static/js/main.e646237b.js",
     "static/js/236.7396c053.chunk.js": "/testingDeployment/static/js/236.7396c053.chunk.js",
     "static/js/703.e8342ea3.chunk.js": "/testingDeployment/static/js/703.e8342ea3.chunk.js",
     "static/js/598.a2e59b02.chunk.js": "/testingDeployment/static/js/598.a2e59b02.chunk.js",
@@ -9,21 +9,18 @@
     "static/media/Introduction.jpeg": "/testingDeployment/static/media/Introduction.03ce3499e0399d33fe9d.jpeg",
     "static/media/150-1500375_transparent-interview-png-job-interview-images-cartoon-png.png": "/testingDeployment/static/media/150-1500375_transparent-interview-png-job-interview-images-cartoon-png.17c5c17525cb23f3d618.png",
     "static/media/recruiter.webp": "/testingDeployment/static/media/recruiter.7b0771debdc29d837770.webp",
-    "static/media/3214746.png": "/testingDeployment/static/media/3214746.7e1e53e4010f34ac87c7.png",
     "static/media/employer.png": "/testingDeployment/static/media/employer.25b80070099fd44f0765.png",
-    "static/media/istockphoto-1191661875-612x612.jpeg": "/testingDeployment/static/media/istockphoto-1191661875-612x612.188d93a3155923f4efe1.jpeg",
     "static/media/candidate.jpeg": "/testingDeployment/static/media/candidate.247e10b8d7c0c8fe4fc1.jpeg",
-    "static/media/Hamburger_icon.svg.png": "/testingDeployment/static/media/Hamburger_icon.svg.a633845bca57a0d1a648.png",
     "index.html": "/testingDeployment/index.html",
-    "main.9bc2a58c.css.map": "/testingDeployment/static/css/main.9bc2a58c.css.map",
-    "main.227b52f3.js.map": "/testingDeployment/static/js/main.227b52f3.js.map",
+    "main.b53a678f.css.map": "/testingDeployment/static/css/main.b53a678f.css.map",
+    "main.e646237b.js.map": "/testingDeployment/static/js/main.e646237b.js.map",
     "236.7396c053.chunk.js.map": "/testingDeployment/static/js/236.7396c053.chunk.js.map",
     "703.e8342ea3.chunk.js.map": "/testingDeployment/static/js/703.e8342ea3.chunk.js.map",
     "598.a2e59b02.chunk.js.map": "/testingDeployment/static/js/598.a2e59b02.chunk.js.map",
     "787.d2a94437.chunk.js.map": "/testingDeployment/static/js/787.d2a94437.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bc2a58c.css",
-    "static/js/main.227b52f3.js"
+    "static/css/main.b53a678f.css",
+    "static/js/main.e646237b.js"
   ]
 }
