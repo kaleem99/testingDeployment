@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/testingDeployment/static/css/main.9470a6a3.css",
-    "main.js": "/testingDeployment/static/js/main.9c91efe0.js",
+    "main.css": "/testingDeployment/static/css/main.3a228fd3.css",
+    "main.js": "/testingDeployment/static/js/main.4b6895a3.js",
     "static/js/236.7396c053.chunk.js": "/testingDeployment/static/js/236.7396c053.chunk.js",
     "static/js/703.e8342ea3.chunk.js": "/testingDeployment/static/js/703.e8342ea3.chunk.js",
     "static/js/598.a2e59b02.chunk.js": "/testingDeployment/static/js/598.a2e59b02.chunk.js",
     "static/js/787.d2a94437.chunk.js": "/testingDeployment/static/js/787.d2a94437.chunk.js",
+    "static/media/preview2.jpeg": "/testingDeployment/static/media/preview2.ddc26ba7d0cb1ab31be8.jpeg",
+    "static/media/preview.jpeg": "/testingDeployment/static/media/preview.8ddd73111ff56afc0929.jpeg",
     "static/media/Introduction.jpeg": "/testingDeployment/static/media/Introduction.03ce3499e0399d33fe9d.jpeg",
-    "static/media/150-1500375_transparent-interview-png-job-interview-images-cartoon-png.png": "/testingDeployment/static/media/150-1500375_transparent-interview-png-job-interview-images-cartoon-png.17c5c17525cb23f3d618.png",
     "static/media/recruiter.webp": "/testingDeployment/static/media/recruiter.7b0771debdc29d837770.webp",
     "static/media/employer.png": "/testingDeployment/static/media/employer.25b80070099fd44f0765.png",
     "static/media/candidate.jpeg": "/testingDeployment/static/media/candidate.247e10b8d7c0c8fe4fc1.jpeg",
     "index.html": "/testingDeployment/index.html",
-    "main.9470a6a3.css.map": "/testingDeployment/static/css/main.9470a6a3.css.map",
-    "main.9c91efe0.js.map": "/testingDeployment/static/js/main.9c91efe0.js.map",
+    "main.3a228fd3.css.map": "/testingDeployment/static/css/main.3a228fd3.css.map",
+    "main.4b6895a3.js.map": "/testingDeployment/static/js/main.4b6895a3.js.map",
     "236.7396c053.chunk.js.map": "/testingDeployment/static/js/236.7396c053.chunk.js.map",
     "703.e8342ea3.chunk.js.map": "/testingDeployment/static/js/703.e8342ea3.chunk.js.map",
     "598.a2e59b02.chunk.js.map": "/testingDeployment/static/js/598.a2e59b02.chunk.js.map",
     "787.d2a94437.chunk.js.map": "/testingDeployment/static/js/787.d2a94437.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9470a6a3.css",
-    "static/js/main.9c91efe0.js"
+    "static/css/main.3a228fd3.css",
+    "static/js/main.4b6895a3.js"
   ]
 }
