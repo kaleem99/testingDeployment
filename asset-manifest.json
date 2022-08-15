@@ -1,27 +1,29 @@
 {
   "files": {
-    "main.css": "/testingDeployment/static/css/main.2ebf1aac.css",
-    "main.js": "/testingDeployment/static/js/main.b2101c54.js",
+    "main.css": "/testingDeployment/static/css/main.dfeef9e4.css",
+    "main.js": "/testingDeployment/static/js/main.a2aaa19f.js",
     "static/js/236.7396c053.chunk.js": "/testingDeployment/static/js/236.7396c053.chunk.js",
     "static/js/703.e8342ea3.chunk.js": "/testingDeployment/static/js/703.e8342ea3.chunk.js",
     "static/js/598.a2e59b02.chunk.js": "/testingDeployment/static/js/598.a2e59b02.chunk.js",
     "static/js/787.d2a94437.chunk.js": "/testingDeployment/static/js/787.d2a94437.chunk.js",
+    "static/media/homeImage.png": "/testingDeployment/static/media/homeImage.3c362483cc9ed144b860.png",
     "static/media/preview2.jpeg": "/testingDeployment/static/media/preview2.ddc26ba7d0cb1ab31be8.jpeg",
     "static/media/preview.jpeg": "/testingDeployment/static/media/preview.8ddd73111ff56afc0929.jpeg",
+    "static/media/recruiter.png": "/testingDeployment/static/media/recruiter.67f36b75d93dd74904bc.png",
     "static/media/Introduction.jpeg": "/testingDeployment/static/media/Introduction.03ce3499e0399d33fe9d.jpeg",
-    "static/media/recruiter.webp": "/testingDeployment/static/media/recruiter.7b0771debdc29d837770.webp",
+    "static/media/2ULogo.png": "/testingDeployment/static/media/2ULogo.91103b89fa3a8009b551.png",
+    "static/media/candidate.png": "/testingDeployment/static/media/candidate.8efb7168354e5c3ee562.png",
     "static/media/employer.png": "/testingDeployment/static/media/employer.25b80070099fd44f0765.png",
-    "static/media/candidate.jpeg": "/testingDeployment/static/media/candidate.247e10b8d7c0c8fe4fc1.jpeg",
     "index.html": "/testingDeployment/index.html",
-    "main.2ebf1aac.css.map": "/testingDeployment/static/css/main.2ebf1aac.css.map",
-    "main.b2101c54.js.map": "/testingDeployment/static/js/main.b2101c54.js.map",
+    "main.dfeef9e4.css.map": "/testingDeployment/static/css/main.dfeef9e4.css.map",
+    "main.a2aaa19f.js.map": "/testingDeployment/static/js/main.a2aaa19f.js.map",
     "236.7396c053.chunk.js.map": "/testingDeployment/static/js/236.7396c053.chunk.js.map",
     "703.e8342ea3.chunk.js.map": "/testingDeployment/static/js/703.e8342ea3.chunk.js.map",
     "598.a2e59b02.chunk.js.map": "/testingDeployment/static/js/598.a2e59b02.chunk.js.map",
     "787.d2a94437.chunk.js.map": "/testingDeployment/static/js/787.d2a94437.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ebf1aac.css",
-    "static/js/main.b2101c54.js"
+    "static/css/main.dfeef9e4.css",
+    "static/js/main.a2aaa19f.js"
   ]
 }
