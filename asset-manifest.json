@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/testingDeployment/static/css/main.bd34458c.css",
-    "main.js": "/testingDeployment/static/js/main.b2494e15.js",
+    "main.css": "/testingDeployment/static/css/main.9f23a7fb.css",
+    "main.js": "/testingDeployment/static/js/main.a21078ae.js",
     "static/js/236.7396c053.chunk.js": "/testingDeployment/static/js/236.7396c053.chunk.js",
     "static/js/703.e8342ea3.chunk.js": "/testingDeployment/static/js/703.e8342ea3.chunk.js",
     "static/js/598.a2e59b02.chunk.js": "/testingDeployment/static/js/598.a2e59b02.chunk.js",
@@ -13,17 +13,19 @@
     "static/media/Introduction.jpeg": "/testingDeployment/static/media/Introduction.03ce3499e0399d33fe9d.jpeg",
     "static/media/2ULogo.png": "/testingDeployment/static/media/2ULogo.91103b89fa3a8009b551.png",
     "static/media/candidate.png": "/testingDeployment/static/media/candidate.8efb7168354e5c3ee562.png",
+    "static/media/RecruiterInformation.pdf": "/testingDeployment/static/media/RecruiterInformation.0668592962c879a29b1b.pdf",
+    "static/media/CandidateInformation.pdf": "/testingDeployment/static/media/CandidateInformation.232f7f47cc20ce8aa81c.pdf",
     "static/media/employer.png": "/testingDeployment/static/media/employer.25b80070099fd44f0765.png",
     "index.html": "/testingDeployment/index.html",
-    "main.bd34458c.css.map": "/testingDeployment/static/css/main.bd34458c.css.map",
-    "main.b2494e15.js.map": "/testingDeployment/static/js/main.b2494e15.js.map",
+    "main.9f23a7fb.css.map": "/testingDeployment/static/css/main.9f23a7fb.css.map",
+    "main.a21078ae.js.map": "/testingDeployment/static/js/main.a21078ae.js.map",
     "236.7396c053.chunk.js.map": "/testingDeployment/static/js/236.7396c053.chunk.js.map",
     "703.e8342ea3.chunk.js.map": "/testingDeployment/static/js/703.e8342ea3.chunk.js.map",
     "598.a2e59b02.chunk.js.map": "/testingDeployment/static/js/598.a2e59b02.chunk.js.map",
     "787.d2a94437.chunk.js.map": "/testingDeployment/static/js/787.d2a94437.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd34458c.css",
-    "static/js/main.b2494e15.js"
+    "static/css/main.9f23a7fb.css",
+    "static/js/main.a21078ae.js"
   ]
 }
