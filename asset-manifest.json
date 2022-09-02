@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/testingDeployment/static/css/main.ee08478c.css",
-    "main.js": "/testingDeployment/static/js/main.578e015a.js",
+    "main.css": "/testingDeployment/static/css/main.6687fb0d.css",
+    "main.js": "/testingDeployment/static/js/main.d7f3b1a9.js",
     "static/js/236.7396c053.chunk.js": "/testingDeployment/static/js/236.7396c053.chunk.js",
     "static/js/703.7465017a.chunk.js": "/testingDeployment/static/js/703.7465017a.chunk.js",
     "static/js/598.bd3428f3.chunk.js": "/testingDeployment/static/js/598.bd3428f3.chunk.js",
     "static/js/787.d2a94437.chunk.js": "/testingDeployment/static/js/787.d2a94437.chunk.js",
     "static/media/homeImage.png": "/testingDeployment/static/media/homeImage.3c362483cc9ed144b860.png",
+    "static/media/scq2.svg": "/testingDeployment/static/media/scq2.ab74fea8d28070eebb3d.svg",
     "static/media/preview2.jpeg": "/testingDeployment/static/media/preview2.ddc26ba7d0cb1ab31be8.jpeg",
     "static/media/preview.jpeg": "/testingDeployment/static/media/preview.8ddd73111ff56afc0929.jpeg",
     "static/media/recruiter.png": "/testingDeployment/static/media/recruiter.67f36b75d93dd74904bc.png",
@@ -16,16 +17,20 @@
     "static/media/RecruiterInformation.pdf": "/testingDeployment/static/media/RecruiterInformation.0668592962c879a29b1b.pdf",
     "static/media/CandidateInformation.pdf": "/testingDeployment/static/media/CandidateInformation.232f7f47cc20ce8aa81c.pdf",
     "static/media/employer.png": "/testingDeployment/static/media/employer.25b80070099fd44f0765.png",
+    "static/media/l3gel.svg": "/testingDeployment/static/media/l3gel.a836c90dfd4f61265cb1.svg",
+    "static/media/scq3.svg": "/testingDeployment/static/media/scq3.07e3f7dae56cd1a6d7ea.svg",
+    "static/media/scq1.svg": "/testingDeployment/static/media/scq1.baadbe0a7048ce1bac18.svg",
+    "static/media/gel-5.10.svg": "/testingDeployment/static/media/gel-5.10.bd42d10882c14a5f6f36cbbc731f8b8e.svg",
     "index.html": "/testingDeployment/index.html",
-    "main.ee08478c.css.map": "/testingDeployment/static/css/main.ee08478c.css.map",
-    "main.578e015a.js.map": "/testingDeployment/static/js/main.578e015a.js.map",
+    "main.6687fb0d.css.map": "/testingDeployment/static/css/main.6687fb0d.css.map",
+    "main.d7f3b1a9.js.map": "/testingDeployment/static/js/main.d7f3b1a9.js.map",
     "236.7396c053.chunk.js.map": "/testingDeployment/static/js/236.7396c053.chunk.js.map",
     "703.7465017a.chunk.js.map": "/testingDeployment/static/js/703.7465017a.chunk.js.map",
     "598.bd3428f3.chunk.js.map": "/testingDeployment/static/js/598.bd3428f3.chunk.js.map",
     "787.d2a94437.chunk.js.map": "/testingDeployment/static/js/787.d2a94437.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee08478c.css",
-    "static/js/main.578e015a.js"
+    "static/css/main.6687fb0d.css",
+    "static/js/main.d7f3b1a9.js"
   ]
 }
