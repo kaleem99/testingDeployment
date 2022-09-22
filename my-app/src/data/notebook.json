@@ -1,0 +1,567 @@
+{
+  "Notebook": {
+    "Role": {
+      "Candidate": {
+        "roleType": "Candidate",
+        "question": "Recruiter is offering",
+        "Information": [
+          {
+            "1": "<h1>This is a negotiation between a <b>job recruiter</b> and a job candidate. You will play the role of the Job Candidate There are eight issues of concern in this negotiation:</h1>"
+          },
+          [
+            "Job Assignment",
+            "Vacation Time",
+            "Starting Date",
+            "Moving Expense Coverage",
+            "Insurance Coverage",
+            "Salary",
+            "Annual Bonus",
+            "Location"
+          ],
+          {
+            "3": "Your goal, as the candidate, is to reach an agreement with the employer on all eight issues that is best for you. THE MORE POINTS YOU EARN, THE BETTER. You may determine what agreement is best for you by referring to the Candidate Point Sheet” on the next page."
+          },
+          {
+            "4": "The 8 issues are listed separately. There are five different alternatives for each of the issues. For example, the salary can range from $82,000 to $90,000. Please note the number of points you will receive for each type of agreement. As a negotiator, you may settle upon any of the five alternatives for each of the issues. Thus, there are a very largenumber of feasible settlements."
+          },
+          {
+            "5": "You should note that each issue has a different degree of importance to you, as indicated by the magnitude of the number of points you could gain or lose. You will have 30 minutes to reach agreement on all 8 issues. In order for any agreement to be binding, you need to reach an agreement with the candidate on all eight issues."
+          },
+          {
+            "6": "IMPORTANT INSTRUCTIONS: Do not, at anytime, tell the other person how many points you are getting. Also, do not let the other negotiator see your “Candidate Point Sheet.” This information is strictly for you."
+          },
+          {
+            "7": "Please become very familiar with your “Candidate Point Sheet.” Feel free to make notes or write on it. The highest number of points you can obtain from this negotiation is plus 13,200 and the lowest number is minus 8,400. These point totals were calculated by adding up the highest number of points you could receive for each of the 8 issues and the lowest number. (See below)"
+          }
+        ],
+        "JobAssignment": [
+          {
+            "option": "Manager",
+            "reason": "",
+            "points": 0
+          },
+          {
+            "option": "Senior",
+            "reason": "",
+            "points": -600
+          },
+          {
+            "option": "Mid-Level",
+            "reason": "",
+            "points": -1200
+          },
+          {
+            "option": "Junior Level",
+            "reason": "",
+            "points": -1800
+          },
+          {
+            "option": "Entry Level",
+            "reason": "",
+            "points": -2400
+          }
+        ],
+        "VacationTime": [
+          {
+            "option": "25 Days",
+            "reason": "",
+            "points": 1600
+          },
+          {
+            "option": "20 Days",
+            "reason": "",
+            "points": 1200
+          },
+          {
+            "option": "15 Days",
+            "reason": "",
+            "points": 800
+          },
+          {
+            "option": "10 Days",
+            "reason": "",
+            "points": 400
+          },
+          {
+            "option": "5 Days",
+            "reason": "",
+            "points": 0
+          }
+        ],
+        "StartingDate": [
+          {
+            "option": "June 1",
+            "reason": "",
+            "points": 2400
+          },
+          {
+            "option": "June 15",
+            "reason": "",
+            "points": 1800
+          },
+          {
+            "option": "July 1",
+            "reason": "",
+            "points": 1200
+          },
+          {
+            "option": "July 15",
+            "reason": "",
+            "points": 800
+          },
+          {
+            "option": "August 1",
+            "reason": "",
+            "points": 0
+          }
+        ],
+        "MovingExpenseCoverage": [
+          {
+            "option": "100%",
+            "reason": "",
+            "points": 3200
+          },
+          {
+            "option": "90%",
+            "reason": "",
+            "points": 2400
+          },
+          {
+            "option": "80%",
+            "reason": "",
+            "points": 1600
+          },
+          {
+            "option": "70%",
+            "reason": "",
+            "points": 800
+          },
+          {
+            "option": "60%",
+            "reason": "",
+            "points": 0
+          }
+        ],
+        "InsuranceCoverage": [
+          {
+            "option": "Umbrella Insurance",
+            "reason": "",
+            "points": 800
+          },
+          {
+            "option": "Home Insurance",
+            "reason": "",
+            "points": 600
+          },
+          {
+            "option": "Life Insurance",
+            "reason": "",
+            "points": 400
+          },
+          {
+            "option": "Health Insurance",
+            "reason": "",
+            "points": 200
+          },
+          {
+            "option": "Long-Term Care Insurance",
+            "reason": "",
+            "points": 0
+          }
+        ],
+        "Salary": [
+          {
+            "option": "$90,000",
+            "reason": "",
+            "points": 0
+          },
+          {
+            "option": "$88,000",
+            "reason": "",
+            "points": -1500
+          },
+          {
+            "option": "$86,000",
+            "reason": "",
+            "points": -3000
+          },
+          {
+            "option": "$84,000",
+            "reason": "",
+            "points": -4500
+          },
+          {
+            "option": "$82,000",
+            "reason": "",
+            "points": -6000
+          }
+        ],
+        "AnnualBonusOption": [
+          {
+            "option": "10%",
+            "reason": "",
+            "points": 4000
+          },
+          {
+            "option": "8%",
+            "reason": "",
+            "points": 3000
+          },
+          {
+            "option": "6%",
+            "reason": "",
+            "points": 2000
+          },
+          {
+            "option": "4%",
+            "reason": "",
+            "points": 1000
+          },
+          {
+            "option": "2%",
+            "reason": "",
+            "points": 0
+          }
+        ],
+        "Location": [
+          {
+            "option": "San Francisco",
+            "reason": "",
+            "points": 1200
+          },
+          {
+            "option": "Atlanta",
+            "reason": "",
+            "points": 900
+          },
+          {
+            "option": "Chicago",
+            "reason": "",
+            "points": 600
+          },
+          {
+            "option": "Boston",
+            "reason": "",
+            "points": 300
+          },
+          {
+            "option": "New York",
+            "reason": "",
+            "points": 0
+          }
+        ],
+        "Protocol": {
+          "Candidate": {
+            "steps": [
+              {
+                "1": "Please select your Job assignment option"
+              },
+              {
+                "2": "Please select your Vacation time option"
+              },
+              {
+                "3": "Please select your Start date"
+              },
+              {
+                "4": "Please select your Moving expense coverage"
+              },
+              {
+                "5": "Please select your Insurance coverage"
+              },
+              {
+                "6": "Please select your Salary"
+              },
+              {
+                "7": "Please select your Annual Bonus option"
+              },
+              {
+                "8": "Please select your Job Location"
+              }
+            ]
+          }
+        }
+      },
+      "Recruiter": {
+        "roleType": "Recruiter",
+        "question": "Employee wants",
+        "Information": [
+          {
+            "1": "This is a negotiation between a job recruiter and a job candidate. You will play the role of the Job Recruiter. There are eight issues of concern in this negotiation:"
+          },
+          [
+            "Job Assignment",
+            "Vacation Time",
+            "Starting Date",
+            "Moving Expense Coverage",
+            "Insurance Coverage",
+            "Salary",
+            "Annual Bonus",
+            "Location"
+          ],
+          {
+            "3": "Your goal, as the recruiter, is to reach an agreement with the candidate on all eight issues that is best for you. THE MORE POINTS YOU EARN, THE BETTER. You may determine what agreement is best for you by referring to the “Recruiter Point Sheet” on the next page."
+          },
+          {
+            "4": "The 8 issues are listed separately. There are five different alternatives for each of the issues. For example, the salary can range from $82,000 to $90,000. Please note the number of points you will receive for each type of agreement. As a negotiator, you may settle upon any of the five alternatives for each of the issues. Thus, there are a very large number of feasible settlements."
+          },
+          {
+            "5": "You should note that each issue has a different degree of importance to you, as indicated by the magnitude of the number of points you could gain or lose. You will have 30 minutes to reach agreement on all 8 issues. In order for any agreement to be binding, you need to reach an agreement with the candidate on all eight issues."
+          },
+          {
+            "6": "IMPORTANT INSTRUCTIONS: Do not, at anytime, tell the other person how many points you are getting. Also, do not let the other negotiator see your “Recruiter Point Sheet.” This information is strictly for you."
+          },
+          {
+            "7": "Please become very familiar with your “Recruiter Point Sheet.” Feel free to make notes or write on it. The highest number of total points you can obtain from this negotiation is plus 13,200 and the lowest number is minus 8,400. These point totals were calculated by adding up the highest number of points you could receive for each of the 8 issues and the lowest number. (See below)"
+          }
+        ],
+
+        "JobAssignment": [
+          {
+            "option": "Manager",
+            "reason": "",
+            "points": -2400
+          },
+          {
+            "option": "Senior",
+            "reason": "",
+            "points": -1800
+          },
+          {
+            "option": "Mid-Level",
+            "reason": "",
+            "points": -600
+          },
+          {
+            "option": "Junior",
+            "reason": "",
+            "points": -1200
+          },
+          {
+            "option": "Entry Level",
+            "reason": "",
+            "points": 0
+          }
+        ],
+        "VacationTime": [
+          {
+            "option": "25 Days",
+            "reason": "",
+            "points": 0
+          },
+          {
+            "option": "20 Days",
+            "reason": "",
+            "points": 400
+          },
+          {
+            "option": "15 Days",
+            "reason": "",
+            "points": 800
+          },
+          {
+            "option": "10 Days",
+            "reason": "",
+            "points": 1200
+          },
+          {
+            "option": "5 Days",
+            "reason": "",
+            "points": 1600
+          }
+        ],
+        "StartingDate": [
+          {
+            "option": "June 1",
+            "reason": "",
+            "points": 0
+          },
+          {
+            "option": "June 15",
+            "reason": "",
+            "points": 800
+          },
+          {
+            "option": "July 1",
+            "reason": "",
+            "points": 1200
+          },
+          {
+            "option": "July 15",
+            "reason": "",
+            "points": 1800
+          },
+          {
+            "option": "August 1",
+            "reason": "",
+            "points": 2400
+          }
+        ],
+        "MovingExpenseCoverage": [
+          {
+            "option": "100%",
+            "reason": "",
+            "points": 0
+          },
+          {
+            "option": "90%",
+            "reason": "",
+            "points": 800
+          },
+          {
+            "option": "80%",
+            "reason": "",
+            "points": 1600
+          },
+          {
+            "option": "70%",
+            "reason": "",
+            "points": 2400
+          },
+          {
+            "option": "60%",
+            "reason": "",
+            "points": 3200
+          }
+        ],
+        "InsuranceCoverage": [
+          {
+            "option": "Umbrella Insurance",
+            "reason": "",
+            "points": 0
+          },
+          {
+            "option": "Home Insurance",
+            "reason": "",
+            "points": 200
+          },
+          {
+            "option": "Life Insurance",
+            "reason": "",
+            "points": 400
+          },
+          {
+            "option": "Health Insurance",
+            "reason": "",
+            "points": 600
+          },
+          {
+            "option": "Long-Term Care Insurance",
+            "reason": "",
+            "points": 800
+          }
+        ],
+        "Salary": [
+          {
+            "option": "$90,000",
+            "reason": "",
+            "points": -6000
+          },
+          {
+            "option": "$88,000",
+            "reason": "",
+            "points": -4500
+          },
+          {
+            "option": "$86,000",
+            "reason": "",
+            "points": -3000
+          },
+          {
+            "option": "$84,000",
+            "reason": "",
+            "points": -1500
+          },
+          {
+            "option": "$82,000",
+            "reason": "",
+            "points": 0
+          }
+        ],
+        "AnnualBonusOption": [
+          {
+            "option": "10%",
+            "reason": "",
+            "points": 0
+          },
+          {
+            "option": "8%",
+            "reason": "",
+            "points": 1000
+          },
+          {
+            "option": "6%",
+            "reason": "",
+            "points": 2000
+          },
+          {
+            "option": "4%",
+            "reason": "",
+            "points": 3000
+          },
+          {
+            "option": "2%",
+            "reason": "",
+            "points": 4000
+          }
+        ],
+        "Location": [
+          {
+            "option": "San Francisco",
+            "reason": "",
+            "points": 0
+          },
+          {
+            "option": "Atlanta",
+            "reason": "",
+            "points": 300
+          },
+          {
+            "option": "Chicago",
+            "reason": "",
+            "points": 600
+          },
+          {
+            "option": "Boston",
+            "reason": "",
+            "points": 900
+          },
+          {
+            "option": "New York",
+            "reason": "",
+            "points": 1200
+          }
+        ],
+        "Protocol": {
+          "Recruiter": {
+            "steps": [
+              {
+                "1": "Please select Candidate Job assignment"
+              },
+              {
+                "2": "Please select Candidate Vacation time"
+              },
+              {
+                "3": "Please select Candidate Starting Date"
+              },
+              {
+                "4": "Please select Candidate Insurance Coverage"
+              },
+              {
+                "5": "Please select Candidate Moving Expense Coverage"
+              },
+              {
+                "6": "Please select Candidate Salary"
+              },
+              {
+                "7": "Please select Candidate Annual Bonus option"
+              },
+              {
+                "8": "Please select Candidate Location"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

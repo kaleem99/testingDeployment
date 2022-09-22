@@ -1,0 +1,465 @@
+@import "../../../styles/colors";
+
+// .singleChoiceQuestion {
+
+//   // border: 1px solid black;
+//   box-sizing: border-box;
+//   border-radius: 5px;
+//   background: white;
+//   // padding: 23px;
+//   margin-top: 32px;
+
+//   .feedback p {
+//     font-size: 15px;
+//     font-weight: bold;
+//   }
+
+//   .label {
+//      margin: 0 0 16px 0;
+//   }
+
+//   .image-bg {
+//     padding: 15px;
+//     margin-bottom: 15px;
+//     border-radius: 5px;
+//     background-image: linear-gradient(to bottom, #014c91, #003257);
+//   }
+
+//   .questionImage {
+//     width: 100%;
+//     height: auto;
+//   }
+
+//   .question-footer {
+//     display: flex;
+//     margin-top: 24px;
+
+//     button {
+//       background: $yellow1;
+//       border-radius: 5px;
+//       width: 198px;
+//       height: 52px;
+//       font-size: 16px;
+//       border: none;
+//       cursor: pointer;
+//       margin-left: auto;
+//     }
+//     button[disabled]{
+//       background: $navy6;
+//     }
+//   }
+.singleChoiceQuestion {
+  height: auto;
+}
+.inputNotChecked {
+  background-color: white;
+  position: relative;
+  margin-bottom: 8px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 10px;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 120px auto;
+  .checkmark {
+    text-align: center;
+    line-height: 46px;
+    // position: relative;
+    // display: inline-block;
+    height: 46px;
+    width: 46px;
+    background-color: #1675d5;
+    margin-left: 16px;
+    // border: 1px solid $navy1;
+    margin-top: auto;
+    margin-bottom: auto;
+    box-sizing: border-box;
+    border-radius: 36px;
+    color: white;
+    text-indent: 0;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .closeMarkIcon {
+    color: #043461;
+    font-size: 56px;
+    margin-left: 12px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .input-text {
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+.inputChecked {
+  background-color: #adcff0;
+  position: relative;
+  margin-bottom: 8px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 10px;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 120px auto;
+  .checkMarkIcon {
+    color: #1675d5;
+    font-size: 56px;
+    margin-left: 12px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .checkmark {
+    text-align: center;
+    line-height: 46px;
+    // position: relative;
+    // display: inline-block;
+    height: 46px;
+    width: auto;
+    background-color: #1675d5;
+    margin-left: 16px;
+    // border: 1px solid $navy1;
+    margin-top: auto;
+    margin-bottom: auto;
+    box-sizing: border-box;
+    border-radius: 36px;
+    color: white;
+    text-indent: 0;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .input-text {
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+[class^="input"] {
+  position: relative;
+  margin-bottom: 8px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 10px;
+  height: 80px;
+  background-color: #f2f2f2;
+  display: grid;
+  grid-template-columns: 200px auto;
+  :checked {
+    background-color: $navy1;
+  }
+  cursor: pointer;
+  // text-align: center;
+  .input-text {
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+  }
+  .response {
+    // border: 1px solid $navy3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 0;
+    line-height: 24px;
+    padding-left: 68px;
+    text-indent: -52px;
+    display: block;
+  }
+  .checkmark {
+    text-align: center;
+    line-height: 46px;
+    // position: relative;
+    // display: inline-block;
+    height: 46px;
+    width: auto;
+    background-color: #1675d5;
+    margin-left: 16px;
+    // border: 1px solid $navy1;
+    margin-top: auto;
+    margin-bottom: auto;
+    box-sizing: border-box;
+    border-radius: 36px;
+    color: white;
+    text-indent: 0;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+    &:before {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 11px;
+      top: 5px;
+      width: 5px;
+      height: 20px;
+      border: solid white;
+      border-width: 0 3px 0 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 13px;
+      top: 9px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+  input {
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+
+    &:hover ~ .response {
+      cursor: pointer;
+      background-color: $navy6;
+      height: 80px;
+    }
+    &:checked ~ .response {
+      background-color: $navy1;
+      color: white;
+    }
+  }
+  input.incorrect ~ .response {
+    background: transparent;
+    border-color: $red1;
+    color: initial;
+
+    .checkmark {
+      background-color: $red1;
+      border-color: $red1;
+      color: transparent;
+
+      &:before {
+        display: block;
+      }
+
+      &:after {
+        display: block;
+        border-width: 0 0 3px 0;
+        height: 5px;
+        width: 20px;
+        left: 9px;
+        top: 11px;
+      }
+    }
+  }
+  input.correct ~ .response {
+    background: transparent;
+    border-color: $green1;
+    color: initial;
+
+    .checkmark {
+      background-color: $green1;
+      border-color: $green1;
+      color: transparent;
+
+      &:after {
+        display: block;
+      }
+    }
+  }
+}
+.drag0 {
+  width: 120px;
+  height: 50px;
+  background-color: #1675d5;
+  position: relative;
+  color: white;
+  border-radius: 20px;
+  border: none;
+}
+
+.drag1 {
+  width: 120px;
+  height: 50px;
+  background-color: #1675d5;
+  position: relative;
+  color: white;
+  border-radius: 20px;
+  border: none;
+}
+
+.drag2 {
+  width: 120px;
+  height: 50px;
+  background-color: #1675d5;
+  position: relative;
+  color: white;
+  border-radius: 20px;
+  border: none;
+}
+.TestingGrid {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+// csss
+// csss
+// scss
+
+.quiz-wrapper {
+  position: relative;
+  display: block;
+  width: 510px;
+  height: 450px;
+  p.question-description {
+    background: #19286c;
+    color: white;
+    padding: 25px 20px;
+  }
+  ul.options {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 165px;
+    list-style: none;
+    border: 1px solid #19286c;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    li {
+      border: 1px solid transparent;
+      padding: 6px 8px;
+    }
+    li.title {
+      background: #19286c;
+      color: white;
+    }
+    li.option {
+      display: block;
+      position: relative;
+      z-index: 50;
+      font-size: 13px;
+    }
+  }
+  .answers {
+    display: inline-block;
+    width: 335px;
+    font-size: 13px;
+    line-height: 20px;
+    .target {
+      display: inline-block;
+      width: 110px;
+      background: lightblue;
+      margin: 0 3px;
+      text-align: center;
+    }
+  }
+  button[type="submit"] {
+    display: block;
+    position: relative;
+    margin: 10px auto;
+    padding: 10px;
+    background: #19286c;
+    border: none;
+    color: white;
+    font-size: 16px;
+  }
+}
+.lightbox-bg {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+.status {
+  display: none;
+  position: absolute;
+  z-index: 110;
+  text-align: center;
+  width: 80%;
+  top: 220px;
+  left: 47px;
+  p {
+    background: white;
+    padding: 30px;
+  }
+}
+
+// QuestionOneDragAndDrop
+
+.content {
+  width: 100%;
+  text-align: left;
+  margin: 1% auto;
+  font-size: 20px;
+  // background-color: gray;
+  height: 500px;
+  padding-left: 20px;
+  .DraggableComponents {
+    width: 100%;
+    height: 70px;
+    background-color: #1675d5;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border-radius: 20px;
+    .Comp1 {
+      margin-top: auto;
+      margin-bottom: auto;
+      text-align: center;
+      .boldDraggables {
+      }
+    }
+  }
+}
+.DragInput1 {
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  background-color: lightgray;
+  border-radius: 10px;
+  margin-top: 2%;
+  display: block;
+  display: grid;
+  grid-template-columns: auto 170px;
+  .DragText {
+    text-align: left;
+    padding-top: 1px;
+    font-size: large;
+  }
+}
+
+.Drop {
+  width: 170px;
+  height: 50px;
+  background-color: #3d75d5;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  .DropHere {
+    padding-top: 0px;
+  }
+}

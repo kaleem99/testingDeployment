@@ -1,0 +1,138 @@
+.Documents {
+  width: 65%;
+  height: 700px;
+  background-color: lightgray;
+  margin: 1% auto;
+  border-radius: 10px;
+  border: 1px solid;
+}
+.pointsSheet {
+  width: 100%;
+  //   overflow: scroll;
+  padding: 10px;
+  margin-top: 5%;
+  // margin: auto;
+  height: 1850px;
+  //   background-color: red;
+}
+.PointSheetTable {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1%;
+  // background-color: lightgray;
+  tr:nth-child(odd) {
+    background-color: rgb(233, 230, 230);
+  }
+  tr:nth-child(1) {
+    background-color: #043461;
+    color: white;
+    height: 50px;
+    border: 1px solid #043461;
+    td,
+    th {
+      font-size: medium;
+    }
+    th:nth-child(1) {
+      border: none;
+      font-size: 20px;
+      font-weight: bolder;
+      width: 50%;
+    }
+    th:nth-child(2) {
+      width: 25%;
+      border: none;
+    }
+    th:nth-child(3) {
+      width: 25%;
+      border: none;
+    }
+  }
+  // padding: 10px;
+}
+td,
+th {
+  // border: 4px solid white;
+  text-align: left;
+  padding: 5px;
+  font-size: medium;
+}
+
+.PayOffTable {
+  height: auto;
+  margin-bottom: 100px;
+  // background-color: blue;
+}
+
+@media screen and (min-width: 1680px) {
+  .pointsSheet {
+    width: 80%;
+  }
+  .PointSheetTable {
+    width: 92%;
+  }
+}
+
+@media screen and (max-height: 480px) {
+  .pointsSheet {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pointsSheet {
+    width: 80%;
+    height: 1700px;
+    padding: 0px;
+    overflow: none;
+    .PointSheetTable {
+      width: 200px;
+    }
+  }
+}
+
+//RoleComponentSVG
+.hexagonIconC {
+  color: #e8387c;
+  transform: rotate(90deg);
+  margin-right: 15px;
+  margin-bottom: -2px;
+}
+
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 6px solid #57c7cb;
+  border-bottom: 8px solid transparent;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-left: 6px solid #57c7cb;
+  border-bottom: 8px solid transparent;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.square {
+  height: 46px;
+  width: 46px;
+  background-color: #57c7cb;
+}
+.parent-div {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 58px;
+  height: 46px;
+  margin: 1% auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.hexagon {
+  font-size: 46px;
+  margin-bottom: auto;
+  margin-top: auto;
+  text-align: left;
+}

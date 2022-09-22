@@ -1,0 +1,78 @@
+@import "../../../../styles/colors";
+@import "../../../../styles/fonts";
+
+.Summary {
+  width: 100%;
+  margin: 1%;
+  height: auto;
+}
+.img1 {
+  width: 100%;
+  height: 350px;
+  margin: auto;
+}
+.VideoLinks{
+  font-size: 26px !important;
+}
+.description {
+  text-align: left;
+  img{
+    width: 50%;
+    margin-top: 2%;
+  }
+  h1{
+    font-size: 43px;
+  }
+  p{
+    // margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 300;
+
+  }
+}
+@media screen and (min-height: 850px) {
+  .Summary {
+    width: 90%;
+    // margin: 5%;
+    height: auto;
+    h2 {
+      font-size: 10px;
+    }
+    .description{
+      img {
+        width: 50%;
+        // height: 450px;
+        margin: 1% auto;
+      }
+    }
+  }
+ 
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 10px;
+  }
+  .Summary {
+    width: 100%;
+    margin: 1% auto;
+  }
+  .img1{
+	  height: 250px;
+  }
+}
+@media screen and (max-height: 480px) {
+  .Summary {
+    width: 100%;
+    margin: 1% auto;
+    height: auto;
+   
+  }
+}
+// @media only screen and (orientation:portrait){
+//   .graph {
+//     height: 80vw;
+//     width: 1000px;
+//     transform: rotate(90deg);
+//   }
+// }

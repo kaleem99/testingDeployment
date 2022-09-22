@@ -1,0 +1,112 @@
+.Resources {
+  // margin: 1% auto;
+  display: grid;
+  // background-color: lightgray;
+  grid-template-columns: auto auto auto;
+  margin-bottom: 8%;
+  width: auto;
+  // margin-left: 100px;
+  .take-away {
+    width: 300px;
+    height: 300px;
+    // background-color: lightgray;
+    // margin: 1% auto;
+    .ResourceIcons {
+      // border: 1px solid;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      margin: 10% auto;
+      background-color: #3d75d3;
+    }
+    p {
+      font-size: 100px;
+      color: white;
+      padding-top: 40px;
+      margin: 10% auto;
+    }
+    h2{
+      // text-align: left;
+      // text-align: center;
+    }
+  }
+}
+.Links {
+  width: 100%;
+  height: 1100px;
+  // background-color: #E6E6E6;
+  display: grid;
+  grid-template-columns: auto;
+iframe {
+    margin-top: 1%;
+    width: 70%;
+    height: 40vh;
+  }
+  .role-btn1 {
+    background-color: #173461;
+    width: 180px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    margin: -10% auto;
+    // margin-left: 10%;
+    border-radius: 50px;
+    // margin-left: 0%;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+  }
+}
+// .VideoLinks {
+//   color: #3d75d3;
+//   cursor: pointer;
+// }
+// .VideoLinks:hover {
+//   color: #173461;
+// }
+
+@media screen and (max-width: 480px) {
+  .Resources {
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: auto;
+    .take-away {
+      width: 100%;
+      height: auto;
+    }
+    table thead {
+      display: none;
+    }
+    table td {
+      display: flex;
+    }
+  }
+  .Videos {
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: auto;
+    .iframeVideo {
+      margin: 10% auto;
+      width: 98%;
+      height: 300px;
+    }
+  }
+}
+@media screen and (max-height: 480px) {
+  .Resources {
+    width: 100%;
+    margin: 0% auto;
+    height: auto;
+    margin-bottom: 11%;
+    .take-away {
+      width: auto;
+      height: 250px;
+      div {
+        p {
+          font-size: 100px;
+        }
+      }
+    }
+  }
+}

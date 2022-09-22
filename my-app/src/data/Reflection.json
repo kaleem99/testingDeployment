@@ -1,0 +1,311 @@
+{
+  "Content": {
+    "Reflection": {
+      "components": [
+        {
+          "component": "SCQ",
+          "type": "SCQ",
+          "id": 1,
+          "levels": {
+            "l1": {
+              "label": "The text that follows is based on a recruitment negotiation, whereby an employer is discussing the different issues that have come up in a potential employee’s employment contract. Match the following phrases with the correct type of issue:",
+              "choices": [
+                {
+                  "Option": "Distributive issue",
+                  "label": "In a salary negotiation, the negotiators found that there were certain issues, such as the starting date and salary, that they had opposing views on. These fall under the ___________ category.",
+                  "checked": "",
+                  "correct": true
+                },
+                {
+                  "Option": "Integrative issue",
+                  "label": "The employer had to discuss and find a mutually beneficial solution to the issue of the employee’s moving expenses. This issue was a/an ___________.",
+                  "checked": "",
+                  "correct": true
+                },
+                {
+                  "Option": "Compatible issue",
+                  "label": "Both the employer and employee agreed that the employee would be best suited for the London office, rather than the office in Manchester. This issue was a/an _______________.",
+                  "checked": "",
+                  "correct": true
+                }
+              ],
+              "attempts": 2,
+              "answer": 1,
+              "correct": null
+            },
+            "l2": {
+              "label": "The main difference between an integrative and a distributive negotiation is the number of issues attached to them. Distributive negotiation can have a maximum of two issues, while  integrative negotiation can account for more than two issues.",
+              "choices": [
+                {
+                  "Option": "True",
+                  "label": "Incorrect. Distributive negotiation – in which the size of the pie is fixed – typically involves only a single issue. These types of negotiations focus on single-issue bargaining strategies. However, if you are a skilled negotiator, you can unbundle existing issues and add issues to the negotiation. Adding issues increases the size of the pie, in which case the negotiation will become integrative.",
+                  "checked": "",
+                  "correct": false
+                },
+                {
+                  "Option": "False",
+                  "label": "Correct, well done. Distributive negotiation – in which the size of the pie is fixed – typically involves only a single issue. Integrative negotiations are those that involve multiple issues, because adding and unbundling issues increases the size of the pie.",
+                  "checked": "",
+                  "correct": true
+                }
+              ],
+              "attempts": 2,
+              "answer": 1,
+              "correct": null
+            },
+            "l3": {
+              "label": "There are two children, Abigail and Steven, who are fighting over the use of the last lemon that they have at home. Steven needs the lemon to make lemonade and Abigail needs the lemon to make icing for her cake. After much dispute, they decide to cut the lemon in half, so that they can each use part of it.",
+              "choices": [
+                {
+                  "Option": "Integrative",
+                  "label": "Incorrect, please try again. In this example, the children’s interest is their use of the lemon. However, the only issue they are negotiating is the single lemon. They are not trying to bring more issues to the table to expand the pie.",
+                  "checked": "",
+                  "correct": false
+                },
+                {
+                  "Option": "Distributive",
+                  "label": "Correct, well done. The children are looking at this situation in terms of a single issue: they both need a lemon. Their agreement to cut it in half is a means of dividing up a fixed resource.",
+                  "checked": "",
+                  "correct": true
+                },
+                {
+                  "Option": "Compatible",
+                  "label": "Incorrect, please try again. In this example, the children’s interest is their use of the lemon. However, the only issue they are negotiating is the single lemon. In this scenario, the children’s interests are not compatible, as there is only one resource on the table and they both value it to an equal degree.",
+                  "checked": "",
+                  "correct": false
+                }
+              ],
+              "attempts": 2,
+              "answer": 1,
+              "correct": null
+            },
+            "l4": {
+              "label": "Cilna has been offered a new job at an engineering company. Although starting salary is important to her, she has a number of interests in changing jobs. A particular concern is the size of the contribution her employer is willing to make towards pension. She is also keen to have some flexibility in her work schedule and to be able to take some annual leave to pursue her love of travel. After a long negotiation around annual leave, flexitime, medical aid, and pension concerns, the company has provided Cilna with three possible packages. These packages are as follows:",
+              "table": [
+                {
+                  "Salary": "30,000",
+                  "Pension": "1,000",
+                  "Medical Aid": "700",
+                  "Petrol": "800",
+                  "FlexTime": "0 days",
+                  "Annual Leave": "22 days"
+                },
+                {
+                  "Salary": "28,000",
+                  "Pension": "1,000",
+                  "Medical Aid": "700",
+                  "Petrol": "300",
+                  "FlexTime": "5 days (work from home)",
+                  "Annual Leave": "20 days"
+                },
+                {
+                  "Salary": "25,000",
+                  "Pension": "2,000",
+                  "Medical Aid": "700",
+                  "Petrol": "600",
+                  "FlexTime": "7 days (work from home)",
+                  "Annual Leave": "26 days"
+                }
+              ],
+              "choices": [
+                {
+                  "Option": "Package 1",
+                  "label": "Incorrect, please try again. Cilna has placed importance on flexibility, pension, and travelling, and this package only takes one of her concerns into account. She is willing to compromise on some of her issues to make sure that the company makes a good contribution towards her pension.",
+                  "checked": "",
+                  "correct": false
+                },
+                {
+                  "Option": "Package 2",
+                  "label": "Incorrect, please try again. Cilna places importance on flexibility, pension, and travelling as her primary interests. One issue she is interested in is the amount the company contributes towards pension, and she was willing to negotiate on some of her interests to make sure that this is a priority.",
+                  "checked": "",
+                  "correct": false
+                },
+                {
+                  "Option": "Package 3",
+                  "label": "Correct, well done. Cilna was offered a package that took her concerns about flexibility, pension, and travelling into account. Although her salary is lower than the other packages, the issues that she entered the negotiation with are being addressed.",
+                  "checked": "",
+                  "correct": true
+                },
+                {
+                  "Option": "Any of the packages",
+                  "label": "Incorrect, please try again. Cilna has mentioned important issues that she would like the company to keep in mind while drawing up her contract. Think about the most important concerns that she has, and which package of issues is most likely to meet her interests of flexibility, pension, and travelling.",
+                  "checked": "",
+                  "correct": false
+                }
+              ],
+              "attempts": 2,
+              "answer": 1,
+              "correct": null
+            },
+            "l5": {
+              "label": "The fixed-pie fallacy refers to the tendency to think there is a static amount of resources that needs to be split between those involved in a negotiation,  which means that the only way one can get more is by taking it from the other.",
+              "choices": [
+                {
+                  "Option": "True",
+                  "label": "Correct, well done. The fixed-pie fallacy refers to the common assumption that negotiators are negotiating over a fixed amount of resources. If resources are (assumed to be) fixed, one person’s gain will be another’s loss. However, skilled negotiators can combat this fallacy by unbundling the issue or adding issues to the negotiation, thereby expanding the pie.",
+                  "checked": "",
+                  "correct": true
+                },
+                {
+                  "Option": "False",
+                  "label": "Incorrect. The fixed-pie fallacy refers to the common assumption that negotiators are negotiating over a fixed amount of resources. If resources are (assumed to be) fixed, one person’s gain will be another’s loss. In this case, skilled negotiators can counteract this fallacy by unbundling the issue or adding issues to the negotiation, thereby expanding the pie.",
+                  "checked": "",
+                  "correct": false
+                }
+              ],
+              "attempts": 2,
+              "answer": 1,
+              "correct": null
+            },
+            "l6": {
+              "label": "In the graph, Agreement 6 is a Pareto improvement over Agreement 1.",
+              "choices": [
+                {
+                  "Option": "True",
+                  "label": "Correct, well done. Agreement 6 uses more of the available surplus than Agreement 1, which is the reservation point for both Person A and Person B. Agreement 1 uses none of the available surplus, which makes that agreement inefficient.",
+                  "checked": "",
+                  "correct": true
+                },
+                {
+                  "Option": "False",
+                  "label": "Incorrect. Agreement 1 is the reservation point for both Person A and Person B. This point does not make use of any of the available surplus. When there is surplus left on the table, the agreement is deemed inefficient or suboptimal. Revisit the notes in this unit to refresh your knowledge on this.",
+                  "checked": "",
+                  "correct": false
+                }
+              ],
+              "attempts": 2,
+              "answer": 1,
+              "correct": null
+            },
+            "l7": {
+              "label": "Agreement 3 is _________ to Agreement 7.",
+              "choices": [
+                {
+                  "Option": "Pareto inferior",
+                  "label": "Incorrect, please try again. Agreement 7 uses less surplus than Agreement 3, which would make Agreement 7 inferior to Agreement 3. Revisit the notes in this unit to revise this topic.",
+                  "checked": "",
+                  "correct": false
+                },
+                {
+                  "Option": "Pareto superior",
+                  "label": "Correct, well done. Agreement 3 is a Pareto improvement, as Person B is able to get more of what they want without making Person A worse off.",
+                  "checked": "",
+                  "correct": true
+                },
+                {
+                  "Option": "Pareto optimal",
+                  "label": "Incorrect, please try again. Agreement 3 is Pareto optimal, as it is on the frontier. However, this is not the correct term, given the specific phrasing of this question. Return to the notes in this unit to revise this topic.",
+                  "checked": "",
+                  "correct": false
+                },
+                {
+                  "Option": "Pareto preferred",
+                  "label": "Incorrect, please try again. The content in this course does not include the term Pareto-preferred agreement. Agreement 3 is preferred, but there is a specific term that refers to this. Return to the notes in this unit to revise this topic.",
+                  "checked": "",
+                  "correct": false
+                }
+              ],
+              "attempts": 2,
+              "answer": 1,
+              "correct": null
+            },
+            "l8": {
+              "label": "Which agreement is the most efficient or optimal for Person A, and a Pareto improvement over Agreement 1?",
+              "choices": [
+                {
+                  "Option": "Agreement 3",
+                  "label": "Incorrect, please try again. Agreement 3 is a Pareto improvement over Agreement 1, but it is not the most efficient or optimal agreement for Person B, as they are not getting as much surplus out of the deal as they could. Return to your notes in this unit to revise this topic.",
+                  "checked": "",
+                  "correct": false
+                },
+                {
+                  "Option": "Agreement 4",
+                  "label": "Incorrect, please try again. Agreement 4 is a Pareto improvement over Agreement 1, but it is not the most efficient or optimal agreement for Person B, as they are not getting as much surplus out of the deal as they could. Return to your notes in this unit to revise this topic.",
+                  "checked": "",
+                  "correct": false
+                },
+                {
+                  "Option": "Agreement 5",
+                  "label": "Correct, well done. Agreement 5 is a Pareto improvement over Agreement 1, as Agreement 1 represents both parties’ reservation points. Agreement 5 is also the most efficient or optimal agreement for Person A, compared to Agreements 3, 4, and 6. With Agreement 5, Person A is able to gain as much surplus out of the deal as they can.",
+                  "checked": "",
+                  "correct": true
+                },
+                {
+                  "Option": "Agreement 6",
+                  "label": "Incorrect, please try again. Agreement 6 is a Pareto improvement over Agreement 1, but it is not the most efficient or optimal agreement for Person A, as they are not getting as much surplus out of the deal as they could. Return to your notes in this unit to revise this topic.",
+                  "checked": "",
+                  "correct": false
+                }
+              ],
+              "attempts": 2,
+              "answer": 1,
+              "correct": null
+            },
+            "l9": {
+              "label": "Person A would prefer Agreement 5 over Agreement 6.",
+              "choices": [
+                {
+                  "Option": "True",
+                  "label": "Correct, well done. Person A would prefer Agreement 5, as it makes use of more of their surplus, as well as more of Person B’s surplus, compared to Agreement 6. Therefore, Agreement 5 is a Pareto-superior agreement to Agreement 6.",
+                  "checked": "",
+                  "correct": true
+                },
+                {
+                  "Option": "False",
+                  "label": "Incorrect. Person A would prefer Agreement 5, as it makes use of more of their surplus, as well as more of Person B’s surplus, compared to Agreement 6. Therefore, Agreement 5 is a Pareto superior agreement to Agreement 6.",
+                  "checked": "",
+                  "correct": false
+                }
+              ],
+              "attempts": 2,
+              "answer": 1,
+              "correct": null
+            },
+            "l10": {
+              "label": "Agreements 3, 4, and 5 are all Pareto optimal. However, between these three, Agreement 4 would be preferred by Person B.",
+              "choices": [
+                {
+                  "Option": "True",
+                  "label": "Incorrect. Person B would prefer Agreement 3 over Agreement 4, as that would give them more surplus out of the agreement.",
+                  "checked": "",
+                  "correct": false
+                },
+                {
+                  "Option": "False",
+                  "label": "Correct, well done. Person B would prefer Agreement 3 over Agreement 4, as that would give them more surplus out of the agreement.",
+                  "checked": "",
+                  "correct": true
+                }
+              ],
+              "attempts": 2,
+              "answer": 1,
+              "correct": null
+            }
+          },
+          "General feedback": "In any negotiation, people can balance out different issues, and order their different priorities, in order to increase the pie and highlight package deals that could generate the most joint surplus. If two parties have opposing interests in an issue, that is an example of a distributive issue (e.g. the starting date and salary in the scenario). Since both parties had to discuss the issue of moving expenses to find a mutually beneficial agreement, this issue can be categorised as an integrative issue, as finding trade-offs in this instance would help them reach an agreement. Both the employer and employee believed that it was best to be based in London rather than Manchester, which is a compatible issue.",
+          "label": "SDS-PAGE is a technique for separating ______ based on their molecular weight.",
+          "choices": [
+            {
+              "label": "DNA",
+              "checked": false,
+              "correct": null
+            },
+            {
+              "label": "RNA",
+              "checked": false,
+              "correct": null
+            },
+            {
+              "label": "proteins",
+              "checked": false,
+              "correct": null
+            }
+          ],
+          "attempts": 2,
+          "answer": 3,
+          "correct": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.result {
+  width: 100%;
+  height: 50vh;
+  margin: auto;
+  // background-color: red;
+  text-align: center;
+  // border-radius: 20px;
+  rect:nth-child(1),
+  // rect:nth-child(2),
+  rect:nth-child(4),
+  rect:nth-child(5),
+  rect:nth-child(6) {
+    // fill: black;
+  }
+  rect:nth-child(2) {
+    fill: lightgray;
+    // width: 100%;
+  }
+  rect:nth-child(9){
+    // fill: #1675D5;
+  }
+}
+.graph {
+  margin: auto;
+  width: 100%;
+  height: 40vh;
+}
+.DivP {
+  p {
+    color: white;
+  }
+}
+.resultsText {
+  font-size: 30px;
+}
+@media screen and (max-height: 480px) {
+  .testing {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .result {
+    width: 100%;
+    height: 350px;
+    margin-left: -1%;
+    text-align: center;
+    border-radius: 20px;
+  }
+  .graph {
+    margin: auto;
+    width: 98%;
+    height: 300px;
+  }
+  .DivP {
+    p {
+      color: black;
+      // font-size: 30px;
+    }
+  }
+}

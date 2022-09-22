@@ -1,0 +1,435 @@
+.RolePage {
+  margin-bottom: -10px;
+  margin-top: -10px;
+}
+.role {
+  width: 500px;
+  height: 300px;
+  // margin-top: 5%;
+  margin: 5% auto;
+  // background-color: rgb(231, 231, 231);
+  border-radius: 10px;
+}
+
+.Button {
+  width: 40%;
+  height: 50%;
+  // background-color: #0b1e40;
+  border-radius: 20px;
+  // color: white;
+  margin: auto;
+}
+.checkMark {
+  font-size: 60px;
+  position: relative;
+  top: -86%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  left: 58%;
+  color: aqua;
+  background-color: white;
+}
+.role-btn {
+  width: 180px;
+  height: 60px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #d8d8d8;
+  color: black;
+
+  cursor: pointer;
+}
+.Intro {
+  width: 90%;
+  // border: 2px solid;
+  // margin-top: 1%;
+  // margin: 1% auto;
+  // border-radius: 10px;
+  font-weight: 100;
+  font-size: 18px;
+  font-family: "proxima-nova", sans-serif;
+  text-align: left;
+  .role {
+    p {
+      // background-color: brown;
+      width: 100%;
+      // height: 400px;
+      margin: auto;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+}
+.InformationData {
+  width: 100%;
+  /* margin: 5% auto; */
+  height: 60vh;
+  padding: 10px;
+  // overflow: scroll;
+  /* border: 2px solid lightgray; */
+  // border-radius: 10px;
+  p {
+    text-align: left;
+    font-size: 17px;
+    // background-color: cadetblue;
+    padding-left: 10px;
+  }
+  .Psemi-bold {
+    font-weight: 600;
+    font-size: 16px;
+    padding-left: 15px;
+    .PIcon {
+      color: #173461;
+      font-size: 8px;
+      padding-right: 10px;
+    }
+  }
+  // overflow: scroll;
+  // border: 2px solid lightgray;
+  // border-radius: 10px;
+  .table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    // border: 1px solid black;
+    width: 100%;
+    box-sizing: unset;
+    font-size: 20px;
+    tr {
+      height: 50px;
+    }
+    tr:nth-child(1) {
+      font-weight: bold;
+      background-color: #043461;
+      color: white;
+      border: 1px solid #043461;
+      th:nth-child(1) {
+        border: none;
+        font-size: 20px;
+        font-weight: bolder;
+        width: 60%;
+      }
+      th:nth-child(2) {
+        width: 20%;
+        border: none;
+      }
+      th:nth-child(3) {
+        width: 20%;
+        border: none;
+      }
+    }
+    td,
+    th {
+      border: 1px solid gray;
+    }
+    tr:nth-child(even) {
+      background-color: rgb(233, 230, 230);
+    }
+    tr:nth-child(10) {
+      font-weight: bold;
+      background-color: #d0e3f6;
+    }
+  }
+}
+.ul {
+  text-align: left;
+}
+
+caption {
+  width: 200%;
+  /* border: 1px solid; */
+  height: 30px;
+  font-weight: bolder;
+  text-align: left;
+  font-size: 30px;
+}
+tr:nth-child(11) {
+  background-color: #dddddd;
+  font-weight: bold;
+}
+td,
+th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+.pdfApp {
+  width: 100%;
+  height: 1450px;
+  // background-color: lightblue;
+  // padding: 100px;
+  margin: auto;
+}
+.roleCard {
+  background-color: #173461;
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-gap: 20px;
+  // width: 100%;
+  height: 27vh;
+  border-radius: 14px;
+  padding: 16px;
+  color: white;
+  div:nth-child(1) {
+    height: 90%;
+    // background-color: #dddddd;
+    margin-top: auto;
+    margin-bottom: auto;
+    img {
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 80%;
+    }
+  }
+  div:nth-child(2) {
+    // background-color: #dddddd;
+    height: 90%;
+    margin-top: auto;
+    margin-bottom: auto;
+    // margin: 1% auto;
+    text-align: left;
+
+    button {
+      width: 180px;
+      height: 50px;
+      border-radius: 30px;
+      background-color: #173461;
+      color: white;
+      font-size: 16px;
+      margin-top: 3%;
+      padding: 10px;
+      margin-right: 4%;
+      border: 1px solid white;
+    }
+    button:hover {
+      background: #3d75d5;
+      // border: 1px solid black;
+      color: black;
+    }
+    .btnActive {
+      background-color: #3d75d5;
+    }
+  }
+}
+@media screen and (min-width: 1680px) {
+  .roleCard {
+    width: 90%;
+    div:nth-child(1) {
+      img {
+        width: 75%;
+      }
+    }
+    div:nth-child(2) {
+      h2 {
+        font-size: 24px;
+        font-weight: bolder;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    .checkMark {
+      font-size: 70px;
+      position: relative;
+      top: -83%;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      left: 58%;
+      color: aqua;
+      background-color: white;
+    }
+  }
+  .pdfApp {
+    height: 1300px;
+    .InformationData {
+      width: 90%;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  div {
+    .roleCard {
+      width: 100%;
+      div:nth-child(1) {
+        img {
+          width: 100%;
+        }
+      }
+      div:nth-child(2) {
+        h2 {
+          font-size: small;
+        }
+        p {
+          font-size: small;
+        }
+        button {
+          font-size: small;
+          height: 35px;
+          margin-bottom: 2%;
+        }
+      }
+    }
+  }
+  .Intro {
+    width: 100%;
+    margin: 25% auto;
+
+    p {
+      // background-color: brown;
+      width: auto;
+      // height: 400px;
+      margin: auto;
+      font-size: 15px;
+      text-align: left;
+    }
+  }
+  .InformationData {
+    width: 100%;
+  }
+  .pdfApp {
+    padding: 0px;
+    height: 700px;
+    overflow-x: none;
+    overflow-y: scroll;
+    .InformationData {
+      padding: 0px;
+    }
+  }
+  .role {
+    width: 100%;
+    height: auto;
+    .grid-container {
+      width: 100%;
+      height: auto;
+      // background-color: #0b1e40;
+      padding: 0px;
+      div {
+        width: 100%;
+        .grid-item {
+          width: 90%;
+          height: 100%;
+          font-size: 10px;
+          img {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-height: 480px) {
+  .roleCard {
+    height: 45vh;
+    width: 80%;
+    margin: 1% auto;
+    div {
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 16px;
+      }
+      button {
+        font-size: 14px !important;
+      }
+    }
+    .checkMark {
+      top: 6%;
+      left: 18%;
+      font-size: 60px;
+    }
+  }
+  .Intro {
+    width: 90%;
+    display: grid;
+    height: auto;
+    grid-template-columns: auto auto;
+    h1 {
+      margin-top: -10%;
+    }
+    p {
+      // background-color: brown;
+      width: 90%;
+      // height: 400px;
+      margin: auto;
+      font-size: 15px;
+    }
+  }
+  .InformationData {
+    margin: 5% auto;
+    width: 80%;
+  }
+  .pdfApp {
+    padding: 0px;
+  }
+  .role {
+    width: 80%;
+    height: auto;
+    .grid-container {
+      width: 100%;
+      height: auto;
+      // margin: auto;
+      // background-color: #0b1e40;
+      .grid-item {
+        width: 90%;
+        height: 150px;
+        font-size: 15px;
+
+        img {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  grid-gap: 60px;
+  div {
+    width: 200px;
+    p {
+      text-align: center;
+    }
+    .grid-item {
+      // background-color: lightgray;
+      // padding: 20px;
+      font-size: 30px;
+      height: 200px;
+      border-radius: 50%;
+      width: 200px;
+      margin: 1% auto;
+      text-align: center;
+      border: none;
+      img {
+        width: 180px;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+.grid-item:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1300px) {
+  .roleCard {
+    width: 120%;
+    font-size: x-small;
+    padding: 0px;
+    div {
+      button {
+        width: 140px !important;
+        height: 30px !important;
+        font-size: x-small !important;
+      }
+    }
+  }
+}
