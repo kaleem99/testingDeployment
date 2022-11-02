@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/testingDeployment/static/css/main.92ddbe13.css",
-    "main.js": "/testingDeployment/static/js/main.917cf9f4.js",
+    "main.css": "/testingDeployment/static/css/main.7f9210af.css",
+    "main.js": "/testingDeployment/static/js/main.b5dd6750.js",
     "static/js/236.7396c053.chunk.js": "/testingDeployment/static/js/236.7396c053.chunk.js",
     "static/js/703.7465017a.chunk.js": "/testingDeployment/static/js/703.7465017a.chunk.js",
     "static/js/598.bd3428f3.chunk.js": "/testingDeployment/static/js/598.bd3428f3.chunk.js",
@@ -12,27 +12,32 @@
     "static/media/preview.jpeg": "/testingDeployment/static/media/preview.8ddd73111ff56afc0929.jpeg",
     "static/media/recruiter.png": "/testingDeployment/static/media/recruiter.67f36b75d93dd74904bc.png",
     "static/media/Introduction.jpeg": "/testingDeployment/static/media/Introduction.03ce3499e0399d33fe9d.jpeg",
+    "static/media/SelectedRecruiter.png": "/testingDeployment/static/media/SelectedRecruiter.6a13181f8cab234e142b.png",
     "static/media/2ULogo.png": "/testingDeployment/static/media/2ULogo.91103b89fa3a8009b551.png",
     "static/media/candidate.png": "/testingDeployment/static/media/candidate.8efb7168354e5c3ee562.png",
     "static/media/RecruiterInformation.pdf": "/testingDeployment/static/media/RecruiterInformation.0668592962c879a29b1b.pdf",
     "static/media/CandidateInformation.pdf": "/testingDeployment/static/media/CandidateInformation.232f7f47cc20ce8aa81c.pdf",
     "static/media/Question5.png": "/testingDeployment/static/media/Question5.cf7cbf8f6a3a3e0bf559.png",
+    "static/media/SelectedRole.png": "/testingDeployment/static/media/SelectedRole.41ec08e40f36a253de50.png",
     "static/media/employer.png": "/testingDeployment/static/media/employer.25b80070099fd44f0765.png",
     "static/media/l3gel.svg": "/testingDeployment/static/media/l3gel.a836c90dfd4f61265cb1.svg",
+    "static/media/recruiter.svg": "/testingDeployment/static/media/recruiter.991e54336945be5304c9ce98b20de518.svg",
     "static/media/scq3.svg": "/testingDeployment/static/media/scq3.07e3f7dae56cd1a6d7ea.svg",
     "static/media/scq1.svg": "/testingDeployment/static/media/scq1.baadbe0a7048ce1bac18.svg",
+    "static/media/candidate.svg": "/testingDeployment/static/media/candidate.c90ddc373eee579c8d2039cb4595ba0b.svg",
     "static/media/gel-5.10.svg": "/testingDeployment/static/media/gel-5.10.bd42d10882c14a5f6f36cbbc731f8b8e.svg",
     "static/media/move.svg": "/testingDeployment/static/media/move.6007ca64f1c670b0d74fb77f77fa5097.svg",
     "index.html": "/testingDeployment/index.html",
-    "main.92ddbe13.css.map": "/testingDeployment/static/css/main.92ddbe13.css.map",
-    "main.917cf9f4.js.map": "/testingDeployment/static/js/main.917cf9f4.js.map",
+    "static/media/checkMark.svg": "/testingDeployment/static/media/checkMark.087033c3ac339c8487d15dc0f45f0ef8.svg",
+    "main.7f9210af.css.map": "/testingDeployment/static/css/main.7f9210af.css.map",
+    "main.b5dd6750.js.map": "/testingDeployment/static/js/main.b5dd6750.js.map",
     "236.7396c053.chunk.js.map": "/testingDeployment/static/js/236.7396c053.chunk.js.map",
     "703.7465017a.chunk.js.map": "/testingDeployment/static/js/703.7465017a.chunk.js.map",
     "598.bd3428f3.chunk.js.map": "/testingDeployment/static/js/598.bd3428f3.chunk.js.map",
     "787.d2a94437.chunk.js.map": "/testingDeployment/static/js/787.d2a94437.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.92ddbe13.css",
-    "static/js/main.917cf9f4.js"
+    "static/css/main.7f9210af.css",
+    "static/js/main.b5dd6750.js"
   ]
 }
