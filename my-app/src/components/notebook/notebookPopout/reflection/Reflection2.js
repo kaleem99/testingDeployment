@@ -42,10 +42,10 @@ function Reflection({ SCQ, popupQuestion, newModal }) {
         contentLevel: questionsArr.label,
       });
       if (SCQ.stateLevel < SCQ.reflectionLevels.length - 1) {
-        setTimeout(() => {
-          dispatch({ type: "SETSTATELEVEL" });
-          dispatch({ type: "CLEARINPUTS" });
-        }, 1000);
+        // setTimeout(() => {
+        dispatch({ type: "SETSTATELEVEL" });
+        dispatch({ type: "CLEARINPUTS" });
+        // }, 1000);
       }
 
       dispatch({ type: "CLEARCORRECTANSWER" });
@@ -57,9 +57,12 @@ function Reflection({ SCQ, popupQuestion, newModal }) {
         <div className="test123">
           {" "}
           <div className="ModalArea"></div>
-          <div className="popupText">
-            <div>{popupQuestion}</div>
+          <div className="popupText" aria-haspopup={true}>
+            <div>
+              <p tabIndex={0}>{popupQuestion}</p>
+            </div>
             <p
+              tabIndex={0}
               className="closeIcon"
               onClick={() => dispatch({ type: "closeModal" })}
             >
@@ -89,10 +92,12 @@ function Reflection({ SCQ, popupQuestion, newModal }) {
         <div className="question-header-and-next">
           <div>
             <h2
+              tabIndex={0}
               style={{
                 margin: "32px 0 8px",
                 textAlign: "left",
                 fontSize: "32px",
+                width: "200px",
               }}
             >
               Question {progressLevel < 10 ? progressLevel + 1 : progressLevel}{" "}
@@ -101,10 +106,11 @@ function Reflection({ SCQ, popupQuestion, newModal }) {
           <div>
             {" "}
             <h2
+              tabIndex={0}
               style={
                 SCQ.gotCorrectAnswer
-                  ? { color: "#3d75d5" }
-                  : { color: "lightgray" }
+                  ? { color: "#3d75d5", width: "100px", textAlign: "right" }
+                  : { color: "lightgray", width: "100px", textAlign: "right" }
               }
               onClick={() => NextLevel()}
             >
@@ -113,7 +119,9 @@ function Reflection({ SCQ, popupQuestion, newModal }) {
           </div>
         </div>
         {SCQ.QuestionLevel !== 4 && (
-          <p className="header-text">{questionsArr.label}</p>
+          <p tabIndex={0} className="header-text">
+            {questionsArr.label}
+          </p>
         )}
       </div>
       <TestYourKnowldgeComponents
@@ -122,7 +130,9 @@ function Reflection({ SCQ, popupQuestion, newModal }) {
         level={SCQ.QuestionLevel}
       />
       {SCQ.QuestionLevel === 4 && (
-        <p className="header-text">{questionsArr.label}</p>
+        <p tabIndex={0} className="header-text">
+          {questionsArr.label}
+        </p>
       )}
 
       <SingleChoiceQuestion questionsArr={questionsArr} />

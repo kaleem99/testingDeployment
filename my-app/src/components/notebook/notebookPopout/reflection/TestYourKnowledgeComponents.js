@@ -28,7 +28,7 @@ export default function TestYourKnowldgeComponents({
               );
             })}
           </table>
-          <p>
+          <p tabIndex={0} className="header-text">
             Considering Cilna’s issues and interests, which package should she
             take?
           </p>
@@ -36,14 +36,14 @@ export default function TestYourKnowldgeComponents({
       ) : level === 4 ? (
         <div>
           {" "}
-          <p>
+          <p tabIndex={0}>
             In the graph below, the y-axis represents Person B’s surplus, and
             the x-axis represents Person A’s surplus. After negotiating for some
             time, seven possible agreements were put on the table for the
             parties to consider. Questions 5 to 9 relate to the agreements shown
             in the graph in Figure 1.
           </p>
-          <img alt="" src={Question5Image}></img>
+          <img tabIndex={0} alt="" src={Question5Image}></img>
         </div>
       ) : (
         ""

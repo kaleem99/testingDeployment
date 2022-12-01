@@ -304,6 +304,13 @@
           "attempts": 2,
           "answer": 3,
           "correct": null
+        },
+        {
+          "DragAndDropQuestions": [
+            "In a salary negotiation, the negotiators found that there were certain issues, such as the starting date and salary, that they had opposing views on. These fall under the _______________ issue category",
+            "The employer had to discuss and find a mutually beneficial solution to the issue of the employee’s moving expenses. This issue was a/an _______________ issue.",
+            "Both the employer and employee agreed that the employee would be best suited for the London office, rather than the office in Manchester. This issue was a/an _______________ issue."
+          ]
         }
       ]
     }

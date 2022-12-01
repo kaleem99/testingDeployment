@@ -76,7 +76,6 @@ function NotebookPopout({
     dispatch({ type: "SimulationStartedFalse" });
     dispatch({ type: "level" });
     dispatch({ type: "SimulationComplete" });
-    dispatch({ type: "openModal" });
   };
   const buttonConditions = () => {
     return sectionSelected === "Simulation" && !simulation && !score
@@ -130,9 +129,12 @@ function NotebookPopout({
       break;
   }
   return (
-    <div className="notebook-popout">
+    <div
+      className="notebook-popout"
+      onFocus={() => dispatch({ type: "False_Notebook_Section_Focus_Button" })}
+    >
       <div className="popout-content">
-        <div className="popout-body">
+        <div tabIndex={0} className="popout-body">
           <div className="header">
             <div
               className="firstDivHeaderDiv"
@@ -174,7 +176,7 @@ function NotebookPopout({
                   <h1 className="pFont">Timer</h1>
                 </div>{" "}
                 <div>
-                  <h1>{formatTimer()}</h1>
+                  <h1 role={"alert"}>{formatTimer()}</h1>
                 </div>
               </div>
             ) : (
@@ -215,6 +217,7 @@ const mapStateToProps = (state, ownProps) => {
     getTime: state.getTime,
     SCQ: state.SCQ,
     simulation: state.simulationNegotiation,
+    NoteBookSectionButton: state.AccessibilityObject.NoteBookSectionButton,
   };
 };
 

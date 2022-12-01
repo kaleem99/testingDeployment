@@ -13,9 +13,14 @@ body {
 .scene {
   overflow: none;
   width: 100%;
-  margin: 1% auto;
+  // margin: 1% auto;
   // background-color: #e8387c;
+  padding-left: 5px;
   height: auto;
+  .simulationContent {
+    width: 60%;
+    margin: 1% auto;
+  }
   p {
     padding-top: 20px;
     // padding: 10px;
@@ -23,24 +28,28 @@ body {
     font-size: 16px;
     margin-bottom: -22px;
   }
-  .simulation-content {
-    text-align: left;
-    font-family: "proxima-nova", sans-serif;
-    font-weight: lighter;
-    font-size: 16px;
+  .div-content {
+    width: 100%;
+    margin: 1% auto;
+    .simulation-content {
+      text-align: left;
+      font-family: "proxima-nova", sans-serif;
+      font-weight: lighter;
+      font-size: 18px;
+    }
   }
 }
-.DivP{
-  .pRotate{
+.DivP {
+  .pRotate {
     color: white;
   }
 }
 .popup1 {
-  width: 450px;
+  width: 100%;
   height: 200px;
   display: grid;
   grid-template-columns: 40% 50%;
-  // margin: 4% auto;
+  margin: 1% auto;
   grid-gap: 30px;
   padding: 10px;
   font-size: 19px;
@@ -67,12 +76,13 @@ body {
     margin-top: auto;
     margin-bottom: auto;
     img {
-      width: 150px;
+      width: 70%;
+      border-radius: 10px;
     }
   }
 }
 .timer {
-  width: 180px;
+  width: 200px;
   height: 50px;
   // background-color: white;
   grid-template-columns: auto auto;
@@ -118,7 +128,7 @@ body {
   padding: 10px;
   // /* background-color: white;
   background-color: lightgray;
-  .modal{
+  .modal {
     position: absolute;
     margin-left: 30%;
   }
@@ -130,8 +140,8 @@ body {
 }
 .animation {
   width: 420px;
-  display:grid;
-  grid-template-columns: auto auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
   height: 100px;
   margin: 1% auto;
   background-color: none;
@@ -165,12 +175,15 @@ body {
   top: 15%;
   left: 30%;
 }
-@media screen and (min-height: 850px) {
-  // .timer {
-  //   position: absolute;
-  //   top: 15%;
-  //   right: 20%;
+@media screen and (min-height: 1680px) {
+  // .scene{
+  //   width: 90%;
   // }
+  .timer {
+    position: absolute;
+    top: 15%;
+    right: 20%;
+  }
 }
 
 @media screen and (max-height: 480px) {
@@ -178,7 +191,7 @@ body {
     width: 170px;
     height: 50px;
     // background-color: #3d75d4;
-    position: absolute;
+    // position: absolute;
     top: 15%;
     color: black;
     left: 80%;
@@ -215,10 +228,9 @@ body {
         /* bottom: 19%; */
         /* position: absolute; */
         grid-template-columns: auto auto;
-        .btn1{
+        .btn1 {
           font-size: 12px;
           height: 36px;
-
         }
       }
     }
@@ -249,9 +261,39 @@ body {
   }
 }
 @media screen and (max-width: 480px) {
-  .DivP{
-    .pRotate{
+  .DivP {
+    .pRotate {
       color: black;
+    }
+  }
+  .timer {
+    width: 150px;
+    height: 40px;
+  }
+}
+
+@media only screen and (min-width: 1680px) {
+  .scene{
+    width: 90%;
+    // margin: 1% auto;
+  }
+  .popup1 {
+    width: 100%;
+    margin-right: 0px;
+    margin-left: auto;
+    div:nth-child(2) {
+      p {
+        text-align: left;
+        margin-top: -10px;
+      }
+    }
+    div:nth-child(1) {
+      margin-top: auto;
+      margin-bottom: auto;
+      img {
+        width: 50%;
+        border-radius: 10px;
+      }
     }
   }
 }

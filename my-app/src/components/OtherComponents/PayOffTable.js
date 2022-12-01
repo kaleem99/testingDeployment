@@ -33,21 +33,21 @@ export default function PAYOFFTable({ tableData }) {
       <caption>Payoff schedule</caption>
       <br></br>
       <br></br>
-      <table key={1} className="table" tabIndex={0}>
-        <tr key={0} tabIndex={0}>
-          <th style={{ width: "40%" }}>Negotiations</th>
-          <th>Lowest</th>
-          <th>Highest</th>
+      <table key={1} className="table">
+        <tr key={0}>
+          <th style={{ width: "40%" }} scope="col">Negotiations</th>
+          <th scope="col">Lowest</th>
+          <th scope="col">Highest</th>
         </tr>
         {ResultTable.map((val, i) => (
-          <tr key={i} tabIndex={0}>
-            <td>{val.name}</td>
+          <tr key={i} >
+            <th scope="row">{val.name}</th>
             <td>{val.min}</td>
             <td>{val.max}</td>
           </tr>
         ))}
         <tr key={1}>
-          <td>Total</td>
+          <th scope="row">Total</th>
           <td>{minTotal}</td>
           <td>{maxTotal}</td>
         </tr>

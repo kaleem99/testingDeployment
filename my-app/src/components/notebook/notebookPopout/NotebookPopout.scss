@@ -5,7 +5,7 @@
   // position: relative;
   // height: 100vh;
   overflow: none;
-  width: 75%;
+  width: 85%;
   margin-left: 0%;
   height: 80vh;
   // margin-top: -1%;
@@ -88,7 +88,7 @@
     height: 10vh;
     display: grid;
     // background-color: gray;
-    // padding-left: 35px;
+    // padding-left: 5px;
     grid-template-columns: auto auto;
     // justify-content: flex-start;
     // position: absolute;
@@ -150,10 +150,10 @@
     }
   }
 }
-.header{
-  .firstDivHeaderDiv{
+.header {
+  .firstDivHeaderDiv {
     // display: grid;
-     grid-template-columns: 60px auto;
+    grid-template-columns: 60px auto;
   }
 }
 @media screen and (max-width: 480px) {
@@ -166,9 +166,15 @@
     .popout-content {
       // position: absolute;
       // left: 1%;
-      padding-left: 1px;
+      padding: 0px;
       // padding: 0px;
       width: 100%;
+      .popout-body {
+        padding-left: 0px;
+        .section-header {
+          font-size: 32px;
+        }
+      }
     }
     .popout-footer {
       // margin: 0% auto;
@@ -178,8 +184,9 @@
       margin: 1% auto;
       .popout-btn {
         width: 160px;
-        height: 45px;
+        // height: 46px;
         // border-radius: 20px;
+        font-size: 15px;
         margin-bottom: 10px;
       }
     }
@@ -216,15 +223,19 @@
     padding-left: 0px;
     .popout-content {
       height: auto;
+      padding: 0px;
       .popout-body {
+        padding: 0px;
         .section-header {
           font-size: 30px;
         }
       }
     }
     .popout-footer {
-      width: 50%;
-      margin: 1% auto;
+      width: 100%;
+      // margin: 1% auto;
+      margin-left: 10px;
+      grid-template-columns: 50% 50%;
       height: 15vh;
       .sectionsButtons {
         margin: 1% auto;
@@ -234,9 +245,7 @@
       }
     }
   }
-  .scene {
-    height: 200px !important;
-  }
+
   .notebook-popout .popout-content .popout-header h2 {
     font-size: 28px;
     margin-top: 10%;
@@ -247,7 +256,7 @@
     margin-left: 92%;
   }
   .notebook-popout .popout-footer .popout-btn {
-    width: 150px;
+    width: 200px;
     padding: -10px;
   }
 }
@@ -257,11 +266,28 @@
     // margin-left: 20%;
     // margin: 1% auto;
     // padding-left: 0px;
+    .header {
+      width: 90%;
+      // background-color: #1475d4;
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+    .popout-footer {
+      // padding-left: 10px;
+      width: 90%;
+    }
   }
 }
+
 .header {
   width: 100%;
   // background-color: #1475d4;
   display: grid;
   grid-template-columns: auto auto;
+  
+}
+
+.roleTypeIcon {
+  font-size: "40px";
+  margin: "auto";
 }

@@ -14,7 +14,7 @@ export default function StartHomePage() {
           </button>
         </div>
         <div className="start-item">
-          <img src={homeImage}></img>
+          <img src={homeImage} alt="Negotioation simuation logo"></img>
         </div>
       </div>
     </div>

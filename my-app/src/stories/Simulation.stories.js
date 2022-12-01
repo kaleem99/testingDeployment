@@ -45,4 +45,5 @@ Primary.args = {
   CandidateEmotion: emotion,
   RecruiterEmotion: emotion,
   formatTimer: formatTimer,
+  simulation: false
 };

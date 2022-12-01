@@ -43,21 +43,20 @@ function Animation({ CandidateEmotion, RecruiterEmotion }) {
   };
   return (
     <div className="animation">
+      <p>Candidate</p>
       <Lottie
         isStopped={false}
         options={defaultOptions1}
         height={100}
         width={100}
       />
+      <p>Recruiter</p>
       <Lottie
         isStopped={false}
         options={defaultOptions2}
         height={100}
         width={100}
       />
-      {/* <button onClick={() => setEmotion(false)}>start</button>
-      <button onClick={() => setEmotion(true)}>stop</button>
-      <button onClick={() => setNewEmotion(angry)}>Update emotion</button> */}
     </div>
   );
 }
@@ -69,7 +68,7 @@ function Simulation({
   modal,
   isComplete,
   score,
-  emotion,
+  Emotions,
   CandidateEmotion,
   RecruiterEmotion,
 }) {
@@ -84,11 +83,11 @@ function Simulation({
           {!isComplete ? (
             <div>
               {!simulation ? (
-                <>
+                <div className="simulationContent">
                   <div className="popup1">
                     <div>
                       <img
-                        alt="please select a role"
+                        alt="Please select a role"
                         src={
                           role === "Candidate"
                             ? candidateImage
@@ -100,27 +99,29 @@ function Simulation({
                     </div>
                     <div>
                       {" "}
-                      <h3>
-                        {role ? "Role you have chosen" : "please select a role"}
+                      <h3 style={{ textAlign: "left" }}>
+                        {role ? "Role you have chosen" : "Please select a role"}
                         <p>{role}</p>
                       </h3>
                     </div>
                   </div>
-                  <p className="simulation-content">
-                    Please read the following candidate information to
-                    familiarize yourself with the motivations of the <br></br>
-                    candidate’s role. You should note that each issue has a
-                    different degree of importance to you, as <br></br>{" "}
-                    indicated by the magnitude of the number of points you could
-                    gain or lose. You will have 30 minutes <br></br> to reach
-                    agreement on all 8 issues. In order for any agreement to be
-                    binding, you need to reach an <br></br> agreement with the
-                    employer on all eight issues.
-                  </p>
-                </>
+                  <div className="div-content">
+                    <p className="simulation-content">
+                      Please read the following candidate information to
+                      familiarize yourself with the motivations of the
+                      candidate’s role. You should note that each issue has a
+                      different degree of importance to you, as indicated by the
+                      magnitude of the number of points you could gain or lose.
+                      You will have 30 minutes to reach agreement on all 8
+                      issues. In order for any agreement to be binding, you need
+                      to reach an agreement with the employer on all eight
+                      issues.
+                    </p>
+                  </div>
+                </div>
               ) : (
                 <>
-                <h2>{simulation.toString()}</h2>
+                  {Emotions}
                   <Animation
                     CandidateEmotion={CandidateEmotion}
                     RecruiterEmotion={RecruiterEmotion}
@@ -176,6 +177,7 @@ const mapStateToProps = (state, ownProps) => {
     CandidateEmotion: state.CandidateEmotion,
     RecruiterEmotion: state.RecruiterEmotion,
     isComplete: state.isComplete,
+    Emotions: state.Emotions,
   };
 };
 export default connect(mapStateToProps, {})(Simulation);

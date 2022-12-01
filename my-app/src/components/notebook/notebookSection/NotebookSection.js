@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import { connect, useDispatch } from "react-redux";
 import { Collapse } from "react-collapse";
 //import { notebookPopout } from 'actions';
@@ -11,31 +11,45 @@ import "./NotebookSection.scss";
 // Icons
 import IconStar from "../../icons/star-solid";
 
-function NotebookSection({ text, onSelect, setSection, section }) {
+function NotebookSection({
+  text,
+  onSelect,
+  setSection,
+  section,
+  setState,
+  state,
+  NoteBookSectionButton,
+}) {
   const dispatch = useDispatch();
   const sectionClicked = () => {
-    dispatch({type: text})
+    dispatch({ type: text });
   };
-
-  // onSelect = (section) => {
-  //   return this.props.onSelect(section);
-  // };
-
-  // render() {
-  // console.log(this.props.focused ? "active" : "")
+  const changeFocus = () => {};
   return (
     <div className="notebook-section card">
       <div className={"card-header" + (section === text ? " active" : "")}>
         <h4 className="incomplete" aria-label={text + "heading"}>
           <button
-            // tabIndex={0}
             aria-label={
               text + " menu button. Select to enter the " + text + " menu pane."
             }
             className="btn btn-link"
             onClick={() => sectionClicked()}
+            onFocus={() => changeFocus()}
+            tabIndex={NoteBookSectionButton === true ? -1 : 0}
           >
             {text}
+            {section === text && (
+              <button
+              style={{"float": "right"}}
+                tabIndex={section === text ? 0 : -1}
+                onClick={() =>
+                  dispatch({ type: "Notebook_Section_Focus_Button" })
+                }
+              >
+                <IconStar />
+              </button>
+            )}
           </button>
         </h4>
       </div>
@@ -43,23 +57,16 @@ function NotebookSection({ text, onSelect, setSection, section }) {
       <div className={"collapse-wrapper " + text}></div>
     </div>
   );
-  // }
 }
-// const mapDispatchToProps = (dispatch) => {
-//   return {
-//     setSection: () => {
-//       dispatch({ type: "Select Role" });
-//     },
-//   };
-// };
+
 const mapStateToProps = (state, ownProps) => {
   return {
     text: ownProps.text,
     focused: ownProps.focused,
     sliderOpen: state.notebook.sliderOpen,
     section: state.sectionSelected,
+    NoteBookSectionButton: state.AccessibilityObject.NoteBookSectionButton,
   };
 };
 
 export default connect(mapStateToProps, {})(NotebookSection);
-

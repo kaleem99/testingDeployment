@@ -23,18 +23,25 @@ function Scene({
   const [section, setSection] = useState("Introduction");
   // const [stateOpenClose, setStateOpenClose] = useState("open");
   const dispatch = useDispatch();
+  window.onload = () => {
+    document.querySelector(".testing-item2").focus();
+  };
   return (
     <div className="testing">
-        <div className="testing-item">
-       {navigation ? <Notebook
-          tabIndex={1}
-          state={section}
-          setState={setSection}
-          taskPages={sections}
-          // setStateOpenClose={setStateOpenClose}
-          // sliderOpen={false}
-          simulation={simulation}
-        /> : ""}
+      <div className="testing-item">
+        {navigation ? (
+          <Notebook
+            tabIndex={1}
+            state={section}
+            setState={setSection}
+            taskPages={sections}
+            // setStateOpenClose={setStateOpenClose}
+            // sliderOpen={false}
+            simulation={simulation}
+          />
+        ) : (
+          ""
+        )}
       </div>
       <div className="testing-item2">
         <NotebookPopout
@@ -50,7 +57,6 @@ function Scene({
           setMinutes={setMinutes}
         />
       </div>
-    
     </div>
   );
 }

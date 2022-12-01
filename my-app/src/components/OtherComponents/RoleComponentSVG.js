@@ -3,10 +3,10 @@ import "./OtherComponents.scss";
 function RoleComponentsSVG({ role }) {
   if (role === "Recruiter") {
     return (
-      <div class="parent-div">
-        <div class="triangle-left"></div>
-        <div class="square"></div>
-        <div class="triangle-right"></div>
+      <div className="parent-div">
+        <div className="triangle-left"></div>
+        <div className="square"></div>
+        <div className="triangle-right"></div>
       </div>
     );
   } else if (role === "Candidate") {

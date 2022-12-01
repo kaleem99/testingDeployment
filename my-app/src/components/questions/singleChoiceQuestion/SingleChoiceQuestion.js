@@ -45,7 +45,7 @@ function SingleChoiceQuestion({ SCQ, questionsArr }) {
             }
           >
             {eval(`SCQ.input${index + 1}`) === "" ? (
-              <div className="checkmark">{input.Option}</div>
+              <button className="checkmark">{input.Option}</button>
             ) : !eval(`SCQ.input${index + 1}`) ? (
               <IoIosCloseCircle className="closeMarkIcon" />
             ) : (

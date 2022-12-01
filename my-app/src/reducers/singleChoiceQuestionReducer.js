@@ -15,6 +15,14 @@ const reflection = [
 ];
 const level = 0;
 
+const initialDragAndDropQuestion = {
+  tasks: [
+    { name: "Distributive", category: "wip", bgcolor: "#173461" },
+    { name: "Compatible", category: "wip", bgcolor: "#173461" },
+    { name: "Integrative", category: "wip", bgcolor: "#173461" },
+  ],
+  Option: ["A", "B", "C"],
+};
 const initialState = {
   input1: "",
   input2: "",
@@ -29,6 +37,14 @@ const initialState = {
   reflectionLevels: reflection,
   AllQuestionAnswered: 0,
   dragAndDropAnswers: 0,
+  dragAndDropQuestions: {
+    tasks: [
+      { name: "Distributive", category: "wip", bgcolor: "#173461" },
+      { name: "Compatible", category: "wip", bgcolor: "#173461" },
+      { name: "Integrative", category: "wip", bgcolor: "#173461" },
+    ],
+    Option: ["A", "B", "C"],
+  },
 };
 
 export default function SCQReducer(state = initialState, action) {
@@ -94,6 +110,20 @@ export default function SCQReducer(state = initialState, action) {
     case "RESETDRAGANDDROP":
       state.dragAndDropAnswers = 0;
       return { ...state, ...{ dragAndDropAnswers: state.dragAndDropAnswers } };
+    case "ON_ANSWER_DROP":
+      state.dragAndDropQuestions.tasks = action.tasks;
+      return {
+        ...state,
+        ...{ dragAndDropQuestions: state.dragAndDropQuestions },
+      };
+    case "CLEAR_ON_ANSWER_DROP":
+      state.dragAndDropQuestions.tasks[0].category = "wip";
+      state.dragAndDropQuestions.tasks[1].category = "wip";
+      state.dragAndDropQuestions.tasks[2].category = "wip";
+      return {
+        ...state,
+        ...{ dragAndDropQuestions: state.dragAndDropQuestions },
+      };
     default:
       return state;
   }

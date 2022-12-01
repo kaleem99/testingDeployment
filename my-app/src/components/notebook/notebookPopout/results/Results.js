@@ -46,7 +46,7 @@ function UserResults({ score }) {
     {/* Will only be in DOM in landscape */}
     <Orientation orientation='landscape' alwaysRender={false}>
      <div className="result">
-       <div className="container">
+       {/* <div className="container"> */}
          <h2 className="resultsText">
            Your Results Are:{" "}
            {!score ? "complete simulation to show the score" : score}
@@ -57,7 +57,7 @@ function UserResults({ score }) {
           data={data}
           options={options}
         />
-      </div>
+      {/* </div> */}
     </div>
     </Orientation>
     {/* Will stay in DOM, but is only visible in portrait */}

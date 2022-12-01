@@ -30,7 +30,9 @@ class Notebook extends Component {
     this.state = {
       notebookIconHover: false,
       section: "Open",
+      tabIndexState: false,
     };
+    this.setState = this.setState.bind(this);
   }
   onSectionSelect = (section = { section: "Introduction" }) => {
     // console.log(section.section)
@@ -79,6 +81,8 @@ class Notebook extends Component {
             focused={text === this.props.sectionSelected}
             key={text}
             index={index + 1}
+            setState={this.setState}
+            state={this.state.tabIndexState}
             tabIndex={index}
           />
           {/* <br></br> */}
@@ -108,7 +112,7 @@ class Notebook extends Component {
     return (
       <>
         <div key={0} id="notebook" tabIndex={0}>
-          <div key={1} id="notebook-head" tabIndex={0}>
+          <div key={1} id="notebook-head" >
             <h6 aria-label="Notebook" id="notebook-title">
               {this.props.simulation ? "Simulation" : "Menu"}
               {/* <img
@@ -119,7 +123,7 @@ class Notebook extends Component {
             </h6>
           </div>
           <div
-          key={2}
+            key={2}
             tabIndex={0}
             className="notebook-body"
             style={{ display: this.props.notebookExpanded ? null : "none" }}

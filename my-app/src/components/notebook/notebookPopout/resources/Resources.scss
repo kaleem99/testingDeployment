@@ -25,7 +25,7 @@
       padding-top: 40px;
       margin: 10% auto;
     }
-    h2{
+    h2 {
       // text-align: left;
       // text-align: center;
     }
@@ -37,9 +37,9 @@
   // background-color: #E6E6E6;
   display: grid;
   grid-template-columns: auto;
-iframe {
-    margin-top: 1%;
-    width: 70%;
+  iframe {
+    margin: 1% auto;
+    width: 60%;
     height: 40vh;
   }
   .role-btn1 {
@@ -81,15 +81,21 @@ iframe {
       display: flex;
     }
   }
-  .Videos {
-    width: 100%;
-    height: 500px;
-    display: grid;
-    grid-template-columns: auto;
+  // .Videos {
+  //   width: 100%;
+  //   height: 500px;
+  //   display: grid;
+  //   grid-template-columns: auto;
+  //   .iframeVideo {
+  //     margin: 10% auto;
+  //     width: 98%;
+  //     height: 300px;
+  //   }
+  // }
+  .Links {
     .iframeVideo {
-      margin: 10% auto;
-      width: 98%;
-      height: 300px;
+      width: 80%;
+      height: 23vh;
     }
   }
 }
@@ -109,4 +115,5 @@ iframe {
       }
     }
   }
+  
 }

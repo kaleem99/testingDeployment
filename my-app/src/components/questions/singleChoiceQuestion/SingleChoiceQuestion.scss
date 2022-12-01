@@ -50,6 +50,9 @@
 //   }
 .singleChoiceQuestion {
   height: auto;
+  .QuestScene {
+    width: 100%;
+  }
 }
 .inputNotChecked {
   background-color: white;
@@ -186,6 +189,7 @@
     background-color: #1675d5;
     margin-left: 16px;
     // border: 1px solid $navy1;
+    border: none;
     margin-top: auto;
     margin-bottom: auto;
     box-sizing: border-box;
@@ -415,38 +419,56 @@
   margin: 1% auto;
   font-size: 20px;
   // background-color: gray;
-  height: 500px;
-  padding-left: 20px;
+  height: 400px;
+  // padding-left: 20px;
   .DraggableComponents {
-    width: 100%;
-    height: 70px;
-    background-color: #1675d5;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    border-radius: 20px;
-    .Comp1 {
-      margin-top: auto;
-      margin-bottom: auto;
+    width: 540px;
+    height: 50px;
+    padding: 5px;
+    background-color: #d3d3d3;
+    // display: none;
+    // display: grid;
+    // grid-template-columns: auto auto auto;
+    margin: 1% auto;
+    border-radius: 10px;
+    .wip {
+      width: 50%;
+      display: grid;
+      height: 50px;
+      grid-gap: 5%;
+      color: white;
       text-align: center;
-      .boldDraggables {
+      grid-template-columns: auto auto auto;
+      margin-right: 100px;
+      .draggable {
+        width: 170px;
+        height: 50px;
+        border-radius: 10px;
+        color: white;
+        font-size: large;
+        border: none;
+        b {
+          margin-top: auto;
+          margin-bottom: auto;
+        }
       }
     }
   }
 }
 .DragInput1 {
   width: 100%;
-  height: 100px;
+  height: 80px;
   padding: 5px;
   background-color: lightgray;
   border-radius: 10px;
-  margin-top: 2%;
-  display: block;
   display: grid;
+  margin-top: 8px;
   grid-template-columns: auto 170px;
   .DragText {
     text-align: left;
     padding-top: 1px;
     font-size: large;
+    margin-top: 10px;
   }
 }
 
@@ -457,9 +479,204 @@
   color: white;
   border-radius: 10px;
   text-align: center;
-  margin-top: auto;
+  margin-top: 10px;
   margin-bottom: auto;
+  .draggable {
+    width: 170px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    font-size: large;
+  }
   .DropHere {
     padding-top: 0px;
+    // margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .singleChoiceQuestion {
+    width: 90% !important;
+    height: auto;
+    .QuestScene {
+      width: 90%;
+    }
+  }
+}
+
+.btnMove {
+  width: 24px;
+  height: 24px;
+  padding: 0px;
+  display: none;
+  .move {
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.move-dialog0,
+.move-dialog1,
+.move-dialog2 {
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+  display: none;
+  height: 200px;
+  width: 200px;
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  z-index: 999;
+  opacity: none;
+
+  // background: #ffffff;
+  // border-radius: 0.5em;
+  box-shadow: 0 10px 20px rgba(black, 0.2);
+  // left: 50%;
+  // max-width: 90%;
+  // pointer-events: none;
+  // position: absolute;
+  // top: 50%;
+  // transform: translate(-50%, -50%);
+  // width: 30em;
+  // text-align: left;
+  // max-height: 90vh;
+  // display: flex;
+  // flex-direction: column;
+  .move-dialog-head {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 35px;
+    h5 {
+      background: #043461;
+      color: white;
+      margin: 0;
+      padding: 8px;
+      text-align: left;
+    }
+    .close {
+      // position: absolute;
+      background-color: $navy5;
+      height: 35px;
+      color: black;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 999;
+      .PCloseDialog {
+        margin: 0;
+        padding: 8px;
+        border: none;
+        font-size: 16px;
+        background: none;
+        font-weight: bold;
+        // /* color: white;
+      }
+    }
+  }
+  .move-dialog-body {
+    padding: 8px;
+    display: grid;
+    .OptionsDisComInte {
+      color: #043461;
+      margin-block: 0.33em 0.7em;
+    }
+    button {
+      border-radius: 3px;
+      padding: 4px;
+      background: $navy1;
+      border: none;
+      margin: 2px;
+      cursor: pointer;
+      color: white;
+      font-size: 16px;
+      &:hover {
+        background-color: $navy1;
+        color: $navy6;
+      }
+    }
+  }
+}
+@media only screen and (max-height: 480px){
+  .singleChoiceQuestion{
+    padding-left: 10px;
+  }
+  .input1,
+  .input0,
+  .input2 {
+    // grid-template-columns: 180px auto;
+
+    .checkmark{
+      // margin-left: 0px;
+      width: 200px;
+      margin-left: 0px;
+      margin-right: auto;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .content {
+    .DraggableComponents {
+      width: 100%;
+      height: 50px;
+      padding: 5px;
+      background-color: #d3d3d3;
+      // display: none;
+      // display: grid;
+      // grid-template-columns: auto auto auto;
+      margin: 1% auto;
+      border-radius: 10px;
+      .wip {
+        width: 100%;
+        display: grid;
+        height: 50px;
+        grid-gap: 5%;
+        color: white;
+        text-align: center;
+        grid-template-columns: auto auto auto;
+        margin-right: 100px;
+        .draggable {
+          width: 100%;
+          height: 50px;
+          border-radius: 10px;
+          color: white;
+          font-size: large;
+          border: none;
+          b {
+            margin-top: auto;
+            margin-bottom: auto;
+          }
+        }
+      }
+    }
+  }
+  .DragInput1 {
+    width: 100%;
+    height: 80px;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 10px;
+    display: grid;
+    margin-top: 8px;
+    grid-template-columns: auto 20%;
+    .Drop {
+      width: 100%;
+    }
+    .DragText {
+      font-size: small;
+    }
+  }
+  .input1,
+  .input0,
+  .input2 {
+    grid-template-columns: 160px auto;
+    .checkmark{
+      margin-left: 0px;
+    }
   }
 }

@@ -4,17 +4,22 @@ import { useState } from "react";
 import data from "../../../../data/notebook.json";
 import "./Role.scss";
 import ReactToPdf from "react-to-pdf";
-import employer from "./img/recruiter.png";
-import employee from "./img/candidate.png";
+
+import recruiter from "./img/recruiter.svg";
+import candidate from "./img/candidate.svg";
+import checkMark from "./img/checkMark.svg";
 import { getEmployer, getEmployee } from "../../../../actions/index";
 import PAYOFFTable from "../../../OtherComponents/PayOffTable";
 
 import { IoCheckmarkCircleSharp } from "react-icons/io5";
 import { BsCircleFill } from "react-icons/bs";
 import BonusNegotiation from "../../../NegotitationConcerns/Bonus";
-import candidateImage from "./img/candidate.png";
+import candidateImage from "./img/candidate.svg";
 import recruiterImage from "./img/recruiter.png";
 import RolePointsSheets from "../../../OtherComponents/PointSheets";
+import selectedCandidate from "./img/SelectedRole.png";
+import selectedRecruiter from "./img/SelectedRecruiter.png";
+
 const ref1 = React.createRef();
 const ref2 = React.createRef();
 
@@ -29,7 +34,13 @@ const roleCard = (role, setState, state) => {
     <div className="roleCard">
       <div>
         <img
+        className="roleImage"
+          src={role === "Candidate" ? selectedCandidate : selectedRecruiter}
+        ></img>
+        {/* <img className="checkMark" src={checkMark}></img>
+        <img
           alt=""
+          className="roleCardImage"
           src={
             role === "Candidate"
               ? candidateImage
@@ -37,16 +48,15 @@ const roleCard = (role, setState, state) => {
               ? recruiterImage
               : ""
           }
-        ></img>
-        <p className="checkMark">
-          <IoCheckmarkCircleSharp />
-        </p>
+        ></img> */}
+        {/* <IoCheckmarkCircleSharp /> */}
+        {/* <checkMark/> */}
       </div>
       <div>
         <h2>You have selected {role} role type.</h2>
         <p>
           Click the buttons below for important information that you can refer
-          back to during the negotiation process
+          back to during the negotiation process.
         </p>
         <ReactToPdf
           targetRef={ref1}
@@ -62,7 +72,7 @@ const roleCard = (role, setState, state) => {
               // onDoubleClick={toPdf}
               onClick={toPdf}
             >
-              Download Instructions
+              Download instructions
             </button>
           )}
         </ReactToPdf>
@@ -80,7 +90,7 @@ const roleCard = (role, setState, state) => {
               onDoubleClick={toPdf}
               onClick={toPdf}
             >
-              Download Point sheet
+              Download point sheet
             </button>
           )}
         </ReactToPdf>
@@ -89,33 +99,14 @@ const roleCard = (role, setState, state) => {
   );
 };
 const roleInformation = (state, role, setState) => {
-  // switch (state) {
-  //   case "Information":
-  //     return (
-  //       <div>
-  //         {roleCard(role, setState, state)}
-  //         <div ref={ref1}>{PDFDownload(role)}</div>
-  //       </div>
-  //     );
-  //   case "PointSheet":
-  //     return (
-  //       <div>
-  //         {roleCard(role, setState, state)}
-  //         <br></br>
-  //         <div ref={ref2}>
-  //           <RolePointsSheets />
-  //         </div>
-  //       </div>
-  //     );
-  //   default:
-  //     return <div></div>;
-  // }
   return (
     <div>
       {roleCard(role, setState, state)}
       <div ref={ref1}>{PDFDownload(role)}</div>
-      <div style={{ "padding-left": "10px", width: "100%" }} ref={ref2}>
-        <h1 style={{ "text-align": "left" }}>{role} point sheet</h1>
+      <div style={{ "padding-left": "" }} ref={ref2}>
+        <h1 style={{ "text-align": "left", paddingLeft: "10px" }}>
+          {role} point sheet
+        </h1>
         <RolePointsSheets />
       </div>
     </div>
@@ -131,14 +122,15 @@ export const PDFDownload = (role) => {
           <p>
             This is a negotiation between a job recruiter and a job candidate.
             <br></br>
-            You will play the role of the <b>Job Candidate</b> There are eight
+            You will play the role of the <b>Job Candidate.</b> There are eight
             issues of concern in this negotiation:
           </p>
           <>
             {negotiationNames.map((name) => (
-              <p className="Psemi-bold" tabIndex={0}>
+
+              <ul className="Psemi-bold" tabIndex={0}>
                 <BsCircleFill className="PIcon" /> {name}
-              </p>
+              </ul>
             ))}
             <p>
               {" "}
@@ -190,7 +182,6 @@ export const PDFDownload = (role) => {
   );
 };
 function SelectRole() {
-  // const role = useSelector((state) => state.count);
   const [state, setState] = useState("Information");
   const role = useSelector((state) => state.role);
   const dispatch = useDispatch();
@@ -206,8 +197,8 @@ function SelectRole() {
   return (
     <div className="RolePage">
       {role === false ? (
-        <div className="Intro" tabIndex="0">
-          <p tabIndex={0} style={{ textAlign: "left" }}>
+        <div className="Intro" >
+          <p  style={{ textAlign: "left" }}>
             {" "}
             Click on one of the buttons below to choose whether you will be
             negotiating as the candidate or recruiter in this simulation. Feel
@@ -222,10 +213,11 @@ function SelectRole() {
                 {" "}
                 <button
                   className="grid-item"
-                  tabIndex={0}
                   onClick={() => Candidate()}
+                  aria-label= "candidiate"
+
                 >
-                  <img src={employee} />
+                  <img src={candidate} alt="" />
                 </button>
                 <p>Candidate</p>
               </div>
@@ -233,10 +225,11 @@ function SelectRole() {
                 {" "}
                 <button
                   className="grid-item"
-                  tabIndex={0}
                   onClick={() => Recruiter()}
+                  aria-label= "recruiter"
+
                 >
-                  <img src={employer} />
+                  <img src={recruiter} />
                 </button>
                 <p>Recruiter</p>
               </div>

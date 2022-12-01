@@ -49,6 +49,8 @@
         //   left: 50px;
         //   bottom: -9px;
         // }
+        // display: grid;
+        // grid-template-columns: 80% auto;
         width: 100%;
         text-align: left;
         color: $white;
@@ -125,11 +127,14 @@ div.notebook-section.card:last-of-type .card-header h4:after {
 }
 @media screen and (max-width: 380px) {
   .card .card-header h4 .btn-link{
-    font-size: 25px;
-    padding: 16px;
+    font-size: 21px;
+    padding: 10px;
   }
   .card{
-    height: 30px;
+    height: 40px;
+    .card-header{
+      padding: 0px;
+    }
   }
 }
 

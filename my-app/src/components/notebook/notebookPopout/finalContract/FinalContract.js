@@ -32,11 +32,11 @@ function FinalContractResults({ options, score, role }) {
             <div tabIndex={0} className="contract-item">
               <div>{NegotiationData[i]}</div>
               <div>
-                {obj.option}
+                {obj.option ? obj.option : "0"}
                 <hr></hr>
               </div>
               <div>
-                {obj.points}
+                {obj.points ? obj.points : "0"}
                 <hr></hr>
               </div>
             </div>

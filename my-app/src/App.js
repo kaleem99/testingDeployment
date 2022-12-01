@@ -9,7 +9,7 @@ import StartHomePage from "./components/HomePage";
 import { IoCloseCircleSharp } from "react-icons/io5";
 import { IoMenuOutline } from "react-icons/io5";
 import TopNavigationMenu from "./components/TopNav";
-// import { sectionSelected } from "./reducers/sectionSelectedReducer";
+
 function OpenClose({ navigation }) {
   const dispatch = useDispatch();
   return (
@@ -37,7 +37,28 @@ function App({
   const [seconds, setSeconds] = useState(getTime.seconds);
   const [minutes, setMinutes] = useState(getTime.minutes);
   const [role, setRole] = useState(false);
-  const [windowSize, setWindow] = useState(false);
+  const size = useWindowSize();
+  function useWindowSize() {
+    const [windowSize, setWindowSize] = useState({
+      width: undefined,
+      height: undefined,
+    });
+    useEffect(() => {
+      function handleResize() {
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      }
+      window.addEventListener("resize", handleResize);
+      handleResize();
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+    if (windowSize < 1200) {
+      return "true";
+    }
+    return windowSize;
+  }
   const dispatch = useDispatch();
   // const state = useSelector((state) => state.time);
   const formatTimer = () => {
@@ -53,6 +74,9 @@ function App({
     }
     const result = minResult + " : " + secResult;
     dispatch({ type: "setTime", time: result });
+    if (minutes === -1 && seconds === 59) {
+      return "00 : 00";
+    }
     return result;
   };
 
@@ -75,29 +99,31 @@ function App({
       dispatch({ type: "level" });
     }
     if (!score && simulation) {
+      // if (minutes !== 0 && seconds !== 0) {
       checkTimer();
-    } else if (simulation === true && minutes === 0) {
+      // }
+    }
+    if (simulation === true && minutes === 0 && seconds === 0) {
       alert("Your Time Has Expired");
-      setTimeout(() => dispatch({ type: "SimulationStartedFalse" }), 2000);
+      dispatch({ type: "SimulationStartedFalse" });
     }
     if (window.innerWidth > 1000) {
       // dispatch({type: "open"})
-      setWindow(true);
       dispatch({ type: "open" });
-    } else {
-      setWindow(false);
     }
   });
   return (
     <div className="App">
+      {/* <TestingSimulation simulation={simulation} /> */}
       <div className="app-item">
         <TopNavigationMenu
           OpenClose={OpenClose}
-          windowSize={windowSize}
+          windowSize={size.width}
           navigation={navigation}
+          start={start}
         />
-      </div>
-      <div className="app-item">
+        {/* </div>
+      <div className="app-item"> */}
         {!start ? (
           <StartHomePage />
         ) : (

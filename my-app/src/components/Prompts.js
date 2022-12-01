@@ -4,6 +4,7 @@ import data from "../data/notebook.json";
 import { incrementLevel } from "../actions";
 import PopupPrompts from "./OtherComponents/PopupPrompts";
 import RenderNegotiations from "./OtherComponents/RenderNegotiations";
+import { calculateEmotions } from "./OtherComponents/CalculateEmotions";
 export const NegotiationData = [
   "JobAssignment",
   "VacationTime",
@@ -15,7 +16,14 @@ export const NegotiationData = [
   "Location",
 ];
 const arr = [];
-function SimulationPrompts({ role, setRole, level, NewOptionChosen, score }) {
+function SimulationPrompts({
+  role,
+  setRole,
+  level,
+  NewOptionChosen,
+  score,
+  simulationNegotiation,
+}) {
   const dispatch = useDispatch();
   const [state, setState] = useState(false);
   const [randomOffer, setRandomOffer] = useState(0);
@@ -24,7 +32,7 @@ function SimulationPrompts({ role, setRole, level, NewOptionChosen, score }) {
   const [result, setResult] = useState(0);
   const [message, setMessage] = useState(false);
   const [negotiationState, setNegotiationState] = useState(true);
-
+  const [difference, setDifference] = useState(0);
   const roleData = data.Notebook.Role[role];
 
   let [negotiation, setNegotiation] = useState(NegotiationData[level]);
@@ -33,11 +41,12 @@ function SimulationPrompts({ role, setRole, level, NewOptionChosen, score }) {
 
   const randomCounterOffer = () => {
     const numbersArr = [0, 1, 2, 3, 4];
-    let numbersArrLength = numbersArr.slice(0, 3);
+    let numbersArrLength = numbersArr.slice(0, 4);
     if (role === "Recruiter") {
       numbersArrLength = numbersArr.slice(2, 5);
     }
     const random = Math.floor(Math.random() * numbersArrLength.length);
+    console.log(numbersArrLength);
     return numbersArrLength[random];
   };
   const formatNumber = () => {
@@ -52,7 +61,6 @@ function SimulationPrompts({ role, setRole, level, NewOptionChosen, score }) {
       dispatch({ type: "SimulationStartedFalse" });
       dispatch({ type: "level" });
       dispatch({ type: "SimulationComplete" });
-      dispatch({ type: "openModal" });
     }, 3000);
     return (
       <>
@@ -67,7 +75,7 @@ function SimulationPrompts({ role, setRole, level, NewOptionChosen, score }) {
         {" "}
         <p>{message ? "Recruiter agrees with your offer. " : ""}You Scored</p>
         <h1>{formatNumber()} points</h1>
-        <button className="btn1" onClick={() => nextNegotiation()}>
+        <button className="btnNext" onClick={() => nextNegotiation()}>
           Next Negotiation
         </button>
       </>
@@ -80,30 +88,18 @@ function SimulationPrompts({ role, setRole, level, NewOptionChosen, score }) {
     let indexOfOptionChosen = roleData[negotiation]
       .map((val) => val.option === NewOptionChosen)
       .indexOf(true);
-
-    if (
-      NewOptionChosen === roleData[negotiation][percent].option &&
-      indexOfOptionChosen === 0
-    ) {
-      dispatch({ type: "HAPPYCANDIDATE" });
-      dispatch({ type: "ANGRYRECRUITER" });
-      return 0;
-    }
-    if (NewOptionChosen === roleData[negotiation][percent].option) {
-      dispatch({ type: "HAPPYCANDIDATE" });
-      dispatch({ type: "HAPPYRECRUITER" });
-      setMessage(true);
-    }
-    if (indexOfOptionChosen < indexOfOptionGotten) {
-      dispatch({ type: "ANGRYCANDIDATE" });
-      dispatch({ type: "HAPPYRECRUITER" });
-      return 0;
-    }
-    if (indexOfOptionChosen > indexOfOptionGotten) {
-      dispatch({ type: "HAPPYCANDIDATE" });
-      dispatch({ type: "ANGRYRECRUITER" });
-      return 0;
-    }
+    setDifference(
+      `OptionChosen ${indexOfOptionChosen} ---- optionGotten ${indexOfOptionGotten}`
+    );
+    dispatch({ type: "CHECK_EMOTIONS", data: difference });
+    calculateEmotions(
+      NewOptionChosen,
+      indexOfOptionChosen,
+      indexOfOptionGotten,
+      roleData[negotiation][percent],
+      dispatch,
+      setMessage
+    );
   };
   const nextNegotiation = () => {
     setNegotiation(NegotiationData[level]);
@@ -111,6 +107,8 @@ function SimulationPrompts({ role, setRole, level, NewOptionChosen, score }) {
     setPercent(roleData[negotiation].length - 1);
     setMessage(false);
     setNegotiationState(true);
+    dispatch({ type: "NEUTRAL_CANDIDATE" });
+    dispatch({ type: "NEUTRAL_RECRUITER" });
   };
   const AcceptOffer = (opt) => {
     arr.push(roleData[negotiation][percent]);
@@ -188,11 +186,12 @@ function SimulationPrompts({ role, setRole, level, NewOptionChosen, score }) {
 }
 const mapStateToProps = (state, ownProps) => {
   return {
-    role: ownProps.role,
+    role: state.role,
     level: ownProps.level,
     // simulation: ownProps.simulation
     NewOptionChosen: state.NewOptionChosen,
-    score: state.score
+    score: state.score,
+    simulationNegotiation: state.simulationNegotiation,
   };
 };
 

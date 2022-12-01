@@ -5,7 +5,7 @@ import "./OtherComponents.scss";
 function RolePointsSheets({ role }) {
   const information = data.Notebook.Role[role];
   return (
-    // <div className="pointsSheet">
+    <div className="pointsSheet">
       <table className="PointSheetTable">
         <tr>
           {/* {" "} */}
@@ -32,7 +32,7 @@ function RolePointsSheets({ role }) {
           // <tr></tr>
         ))}
       </table>
-    // </div>
+    </div>
   );
 }
 

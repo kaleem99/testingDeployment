@@ -49,7 +49,7 @@ function Reflection({ options, role = "Candidate", renegotiateAmount, score }) {
           ))}
         </table>
 
-        {/* <div class="reflection-container">
+        {/* <div className="reflection-container">
           <div className="reflection-item1">Renegotiate</div>
           <div className="reflection-item1">Negotiation</div>
           <div className="reflection-item1">Option Chosen</div>

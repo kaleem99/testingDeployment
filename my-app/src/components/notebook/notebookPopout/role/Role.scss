@@ -20,15 +20,19 @@
   margin: auto;
 }
 .checkMark {
-  font-size: 60px;
-  position: relative;
-  top: -86%;
-  width: 60px;
-  height: 60px;
+  margin-top: 1px;
+  // position: relative;
+  // top: 15%;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  left: 58%;
-  color: aqua;
+  // left: 35%;
+  // color: aqua;
+  border: 1px solid;
   background-color: white;
+  svg {
+    // color: white;
+  }
 }
 .role-btn {
   width: 180px;
@@ -56,7 +60,7 @@
       // background-color: brown;
       width: 100%;
       // height: 400px;
-      margin: auto;
+      margin: 5% auto;
       font-size: 24px;
       font-weight: bold;
     }
@@ -77,9 +81,12 @@
     padding-left: 10px;
   }
   .Psemi-bold {
+    list-style: none;
     font-weight: 600;
     font-size: 16px;
     padding-left: 15px;
+    text-align: left;
+
     .PIcon {
       color: #173461;
       font-size: 8px;
@@ -157,10 +164,10 @@ th {
 
 .pdfApp {
   width: 100%;
-  height: 1450px;
+  height: 1400px;
   // background-color: lightblue;
   // padding: 100px;
-  margin: auto;
+  // margin: auto;
 }
 .roleCard {
   background-color: #173461;
@@ -168,16 +175,17 @@ th {
   grid-template-columns: 30% auto;
   grid-gap: 20px;
   // width: 100%;
-  height: 27vh;
+  height: 250px;
   border-radius: 14px;
   padding: 16px;
   color: white;
   div:nth-child(1) {
-    height: 90%;
+    height: auto;
     // background-color: #dddddd;
+    width: 80%;
     margin-top: auto;
     margin-bottom: auto;
-    img {
+    .roleImage {
       margin-top: auto;
       margin-bottom: auto;
       width: 80%;
@@ -199,6 +207,7 @@ th {
       color: white;
       font-size: 16px;
       margin-top: 3%;
+      cursor: pointer;
       padding: 10px;
       margin-right: 4%;
       border: 1px solid white;
@@ -206,7 +215,7 @@ th {
     button:hover {
       background: #3d75d5;
       // border: 1px solid black;
-      color: black;
+      color: white;
     }
     .btnActive {
       background-color: #3d75d5;
@@ -215,10 +224,23 @@ th {
 }
 @media screen and (min-width: 1680px) {
   .roleCard {
-    width: 90%;
+    width: 80%;
     div:nth-child(1) {
-      img {
-        width: 75%;
+      .roleCardImage {
+        width: 70%;
+      }
+      .checkMark {
+        font-size: 70px;
+        // position: relative;
+        // top: -75%;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        // text-align: center;
+        left: 68%;
+        color: aqua;
+        // background-color: white;
+        padding: none;
       }
     }
     div:nth-child(2) {
@@ -230,20 +252,10 @@ th {
         font-size: 16px;
       }
     }
-    .checkMark {
-      font-size: 70px;
-      position: relative;
-      top: -83%;
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      left: 58%;
-      color: aqua;
-      background-color: white;
-    }
   }
   .pdfApp {
     height: 1300px;
+    width: 90%;
     .InformationData {
       width: 90%;
     }
@@ -253,8 +265,17 @@ th {
   div {
     .roleCard {
       width: 100%;
+      height: 270px;
       div:nth-child(1) {
-        img {
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: auto;
+        .roleCardImage {
+          width: 100%;
+        }
+        .roleImage {
+          margin-top: 5%;
+          margin-bottom: auto;
           width: 100%;
         }
       }
@@ -275,7 +296,7 @@ th {
   }
   .Intro {
     width: 100%;
-    margin: 25% auto;
+    margin: 5% auto;
 
     p {
       // background-color: brown;
@@ -291,11 +312,12 @@ th {
   }
   .pdfApp {
     padding: 0px;
-    height: 700px;
+    height: 550px;
     overflow-x: none;
     overflow-y: scroll;
     .InformationData {
       padding: 0px;
+      overflow: hidden;
     }
   }
   .role {
@@ -304,26 +326,33 @@ th {
     .grid-container {
       width: 100%;
       height: auto;
+      grid-gap: 0;
       // background-color: #0b1e40;
       padding: 0px;
       div {
         width: 100%;
         .grid-item {
-          width: 90%;
-          height: 100%;
+          width: 40vw;
+          height: 40vw;
           font-size: 10px;
           img {
             width: 80%;
           }
         }
       }
+      div:nth-child(1) {
+        text-align: left;
+      }
+      div:nth-child(2) {
+        text-align: right;
+      }
     }
   }
 }
 @media screen and (max-height: 480px) {
   .roleCard {
-    height: 45vh;
-    width: 80%;
+    height: 50vh;
+    width: 100% !important;
     margin: 1% auto;
     div {
       h2 {
@@ -343,10 +372,11 @@ th {
     }
   }
   .Intro {
-    width: 90%;
+    width: 100%;
     display: grid;
     height: auto;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
+    text-align: left;
     h1 {
       margin-top: -10%;
     }
@@ -354,30 +384,39 @@ th {
       // background-color: brown;
       width: 90%;
       // height: 400px;
-      margin: auto;
+      // margin: auto;
       font-size: 15px;
     }
   }
   .InformationData {
     margin: 5% auto;
-    width: 80%;
+    width: 100%;
   }
   .pdfApp {
     padding: 0px;
+    // height: 1600px;
   }
   .role {
-    width: 80%;
+    width: 100%;
     height: auto;
+    margin: 1% auto;
+    // margin-left: 0px;
+    // margin-right: auto;
     .grid-container {
-      width: 100%;
+      width: 70%;
       height: auto;
-      // margin: auto;
+      margin: auto;
+      grid-gap: 0px;
+      margin: auto;
+      div {
+        margin: auto;
+      }
       // background-color: #0b1e40;
       .grid-item {
         width: 90%;
         height: 150px;
         font-size: 15px;
-
+        margin: 1% auto;
         img {
           width: 90%;
         }
@@ -406,7 +445,7 @@ th {
       text-align: center;
       border: none;
       img {
-        width: 180px;
+        width: 100%;
         border-radius: 10px;
       }
     }
@@ -430,6 +469,9 @@ th {
         height: 30px !important;
         font-size: x-small !important;
       }
+    }
+    .checkMark {
+      top: 1%;
     }
   }
 }

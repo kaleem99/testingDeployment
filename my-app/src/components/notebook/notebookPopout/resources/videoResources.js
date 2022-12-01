@@ -14,20 +14,22 @@ const videoContent = [
 export default function VideoResources({ setState, state, startVideo, video }) {
   return (
     <div className="Links">
-        <p>{videoContent[0]}</p>
-        <p>{videoContent[1]}</p>
-        <iframe
-          id="hapyak-player-234171-4234"
-          src="//www.hapyak.com/embed?key=471bc532905a4d9e9e09&amp;project=234171&amp;native_controls=false"
-          className="iframeVideo"
-        ></iframe>
-        <p>{videoContent[2]}</p>
-        <iframe
-          id="hapyak-player-234171-4234"
-          src="//www.hapyak.com/embed?key=471bc532905a4d9e9e09&amp;project=234172&amp;native_controls=false"
-          className="iframeVideo"
-        ></iframe>
-        <p>{videoContent[3]}</p>
+      <p>{videoContent[0]}</p>
+      <p>{videoContent[1]}</p>
+      <iframe
+        title="1"
+        id="hapyak-player-234171-4234"
+        src="//www.hapyak.com/embed?key=471bc532905a4d9e9e09&amp;project=234171&amp;native_controls=false"
+        className="iframeVideo"
+      ></iframe>
+      <p>{videoContent[2]}</p>
+      <iframe
+        title="2"
+        id="hapyak-player-234171-4234"
+        src="//www.hapyak.com/embed?key=471bc532905a4d9e9e09&amp;project=234172&amp;native_controls=false"
+        className="iframeVideo"
+      ></iframe>
+      <p>{videoContent[3]}</p>
     </div>
   );
 }

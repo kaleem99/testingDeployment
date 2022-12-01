@@ -28,6 +28,8 @@ import { NegotiationOption } from "./negotiationOptionChosen";
 import MCQ from "./multipleChoiceQuestionReducer";
 // import SCQ from "./singleChoiceQuestionReducer";
 import SCQReducer from "./singleChoiceQuestionReducer";
+import { testingEmotionsReducer } from "./testing";
+import contentInfoAccessibilityReducer from "./ContentInformationReducer";
 export default combineReducers({
   role: roleReducer,
   modal: modalReducer,
@@ -55,4 +57,6 @@ export default combineReducers({
   getTime: getTime,
   popupQuestion: PopupReducer,
   simulationNegotiation: simulationReducer,
+  Emotions: testingEmotionsReducer,
+  AccessibilityObject: contentInfoAccessibilityReducer,
 });
